@@ -1,0 +1,11 @@
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\bin\Debug\net8.0\KlaseOffroadAdventure.deps.json
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\bin\Debug\net8.0\KlaseOffroadAdventure.dll
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\bin\Debug\net8.0\KlaseOffroadAdventure.pdb
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\KlaseOffroadAdventure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\KlaseOffroadAdventure.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\KlaseOffroadAdventure.AssemblyInfo.cs
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\KlaseOffroadAdventure.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\KlaseOffroadAdventure.dll
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\refint\KlaseOffroadAdventure.dll
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\KlaseOffroadAdventure.pdb
+C:\Users\User\Desktop\Implementacija\OffroadAdventure\KlaseOffroadAdventure\obj\Debug\net8.0\ref\KlaseOffroadAdventure.dll
