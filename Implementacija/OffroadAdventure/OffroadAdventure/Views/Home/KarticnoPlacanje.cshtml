@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Kartično plaćanje";
+}
+
+<div class="kartica-wrapper">
+    <h2>Kartično plaćanje</h2>
+
+    <form class="kartica-form">
+        <div class="kartica-row">
+            <label>Ime i prezime</label>
+            <input type="text" placeholder="Placeholder" />
+        </div>
+
+        <div class="kartica-row">
+            <label>Broj kartice</label>
+            <input type="text" placeholder="Placeholder" />
+        </div>
+
+        <div class="kartica-row">
+            <label>Datum isteka</label>
+            <div class="kartica-datum">
+                <input type="text" placeholder="Placeholder" />
+                <span>/</span>
+                <input type="text" placeholder="Placeholder" />
+            </div>
+        </div>
+
+        <div class="kartica-row">
+            <label>CVV</label>
+            <input type="text" placeholder="Placeholder" />
+        </div>
+
+        <button type="submit" class="kartica-dugme">Plati</button>
+    </form>
+</div>

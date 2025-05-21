@@ -18,7 +18,27 @@ namespace OffroadAdventure.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult PonudaVozila()
+        {
+            return View();
+        }
+        public IActionResult SaznajteVise()
+        {
+            return View();
+        }
+        public IActionResult Rezervacija()
+        {
+            return View();
+        }
+        public IActionResult ONama()
+        {
+            return View();
+        }
+        public IActionResult Recenzije()
+        {
+            return View();
+        }
+        public IActionResult KarticnoPlacanje()
         {
             return View();
         }

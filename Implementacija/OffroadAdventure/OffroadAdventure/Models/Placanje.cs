@@ -16,6 +16,7 @@ namespace OffroadAdventure.Models
         public DateTime datumPlacanja { get; set; }
         public double popust { get; set; }
 
+        public ZahtjevZaRentanje zahtjevZaRentanje { get; set; }
         public Placanje() { }
     }
 }

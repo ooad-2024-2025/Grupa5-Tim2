@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OffroadAdventure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdc8f47b8278f0f79b7b4284b6b66a72811e4e88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+25a0f47d7122ffa6c26fba5dd4958f7e2f8b6a9d")]
 [assembly: System.Reflection.AssemblyProductAttribute("OffroadAdventure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OffroadAdventure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

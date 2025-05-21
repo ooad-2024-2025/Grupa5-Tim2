@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Rezervacija";
+}
+
+<div class="rezervacija-wrapper">
+    <div class="forma-strana">
+        <h2>Rezervacija</h2>
+
+        <form>
+            <select class="input-full">
+                <option>Odabrana vozila</option>
+            </select>
+
+            <div class="form-row">
+                <input type="text" placeholder="Ime" />
+                <input type="text" placeholder="Prezime" />
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Broj telefona" />
+                <input type="email" placeholder="Email adresa" />
+            </div>
+
+            <div class="form-row">
+                <input type="date" />
+                <input type="time" />
+                <input type="text" placeholder="Broj vozila" />
+            </div>
+
+            <textarea placeholder="Dodatni zahtjevi"></textarea>
+
+            <div class="dugmici">
+                <button type="button">Plati pri preuzimanju</button>
+                <button type="button" onclick="location.href='/Home/KarticnoPlacanje'">Plati karticom</button>
+            </div>
+
+            <div class="cijena-info">
+                <span>Popust: 0%</span>
+                <span>Cijena 0,00 KM</span>
+            </div>
+        </form>
+    </div>
+
+    <div class="tekst-strana">
+        <p><strong>Napravite rezervaciju svog vozila na vrijeme.</strong></p>
+        <p>
+            Naš tim će Vas kontaktirati kako bismo zvanično potvrdili Vašu rezervaciju.
+            Ukoliko ne želite praviti rezervaciju putem elektronske forme, molimo Vas da nas kontaktirate na broj telefona.
+        </p>
+        <p>Forma je informativnog sadržaja – neophodno je napraviti telefonsku potvrdu prije datuma i vremena rezervacije.</p>
+    </div>
+</div>

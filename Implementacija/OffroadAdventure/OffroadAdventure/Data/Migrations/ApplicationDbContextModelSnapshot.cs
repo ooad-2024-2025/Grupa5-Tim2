@@ -85,6 +85,11 @@ namespace OffroadAdventure.Data.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("nvarchar(13)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -136,6 +141,10 @@ namespace OffroadAdventure.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator().HasValue("IdentityUser");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -231,8 +240,9 @@ namespace OffroadAdventure.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("autor_id")
-                        .HasColumnType("int");
+                    b.Property<string>("autor_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("datum")
                         .HasColumnType("datetime2");
@@ -244,7 +254,13 @@ namespace OffroadAdventure.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("userId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("userId");
 
                     b.ToTable("Komentar", (string)null);
                 });
@@ -260,8 +276,9 @@ namespace OffroadAdventure.Data.Migrations
                     b.Property<DateTime>("datum")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("primalac_id")
-                        .HasColumnType("int");
+                    b.Property<string>("primalac_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("status")
                         .HasColumnType("int");
@@ -271,6 +288,8 @@ namespace OffroadAdventure.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
+
+                    b.HasIndex("primalac_id");
 
                     b.ToTable("Notifikacija", (string)null);
                 });
@@ -300,6 +319,8 @@ namespace OffroadAdventure.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("zahtjevZaRentanjeId");
+
                     b.ToTable("Placanje", (string)null);
                 });
 
@@ -318,6 +339,10 @@ namespace OffroadAdventure.Data.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("id");
+
+                    b.HasIndex("VoziloId");
+
+                    b.HasIndex("ZahtjevZaRentanjeId");
 
                     b.ToTable("StavkaZahtjeva", (string)null);
                 });
@@ -370,8 +395,9 @@ namespace OffroadAdventure.Data.Migrations
                     b.Property<DateTime>("datumOd")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("korisnik_id")
-                        .HasColumnType("int");
+                    b.Property<string>("korisnik_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("popust")
                         .HasColumnType("float");
@@ -384,7 +410,24 @@ namespace OffroadAdventure.Data.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("korisnik_id");
+
                     b.ToTable("ZahtjevZaRentanje", (string)null);
+                });
+
+            modelBuilder.Entity("OffroadAdventure.Models.User", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<string>("Ime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Prezime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("User");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -436,6 +479,69 @@ namespace OffroadAdventure.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("OffroadAdventure.Models.Komentar", b =>
+                {
+                    b.HasOne("OffroadAdventure.Models.User", "user")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("user");
+                });
+
+            modelBuilder.Entity("OffroadAdventure.Models.Notifikacija", b =>
+                {
+                    b.HasOne("OffroadAdventure.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("primalac_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OffroadAdventure.Models.Placanje", b =>
+                {
+                    b.HasOne("OffroadAdventure.Models.ZahtjevZaRentanje", "zahtjevZaRentanje")
+                        .WithMany()
+                        .HasForeignKey("zahtjevZaRentanjeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("zahtjevZaRentanje");
+                });
+
+            modelBuilder.Entity("OffroadAdventure.Models.StavkaZahtjeva", b =>
+                {
+                    b.HasOne("OffroadAdventure.Models.Vozilo", "Vozilo")
+                        .WithMany()
+                        .HasForeignKey("VoziloId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OffroadAdventure.Models.ZahtjevZaRentanje", "ZahtjevZaRentanje")
+                        .WithMany()
+                        .HasForeignKey("ZahtjevZaRentanjeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Vozilo");
+
+                    b.Navigation("ZahtjevZaRentanje");
+                });
+
+            modelBuilder.Entity("OffroadAdventure.Models.ZahtjevZaRentanje", b =>
+                {
+                    b.HasOne("OffroadAdventure.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("korisnik_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

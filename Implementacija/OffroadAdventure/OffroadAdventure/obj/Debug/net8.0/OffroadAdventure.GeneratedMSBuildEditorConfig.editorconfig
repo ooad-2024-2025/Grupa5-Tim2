@@ -1,57 +1,189 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = OffroadAdventure
 build_property.RootNamespace = OffroadAdventure
-build_property.ProjectDir = C:\Users\User\Desktop\OOADrepo\Implementacija\OffroadAdventure\OffroadAdventure\
+build_property.ProjectDir = C:\Users\User\OneDrive\Desktop\OOAD_repo\Implementacija\OffroadAdventure\OffroadAdventure\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\Desktop\OOADrepo\Implementacija\OffroadAdventure\OffroadAdventure
+build_property.MSBuildProjectDirectory = C:\Users\User\OneDrive\Desktop\OOAD_repo\Implementacija\OffroadAdventure\OffroadAdventure
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/Index.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/Privacy.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/KarticnoPlacanje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxLYXJ0aWNub1BsYWNhbmplLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/ONama.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPTmFtYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/PonudaVozila.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQb251ZGFWb3ppbGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/Error.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/Recenzije.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWNlbnppamUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/Rezervacija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZXplcnZhY2lqYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Home/SaznajteVise.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYXpuYWp0ZVZpc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Komentar/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Komentar/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Komentar/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Komentar/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Komentar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS29tZW50YXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Notifikacijas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpa2FjaWphc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Notifikacijas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpa2FjaWphc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Notifikacijas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpa2FjaWphc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Notifikacijas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpa2FjaWphc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Notifikacijas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpa2FjaWphc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Placanje/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Placanje/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Placanje/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Placanje/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Placanje/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhY2FuamVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/_ViewImports.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Vozilo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm96aWxvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Vozilo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm96aWxvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Vozilo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm96aWxvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Vozilo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm96aWxvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Vozilo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm96aWxvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/ZahtjevZaRentanjes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlphUmVudGFuamVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/ZahtjevZaRentanjes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlphUmVudGFuamVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/ZahtjevZaRentanjes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlphUmVudGFuamVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/ZahtjevZaRentanjes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlphUmVudGFuamVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/ZahtjevZaRentanjes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWmFodGpldlphUmVudGFuamVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/_ViewStart.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/Desktop/OOADrepo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/_Layout.cshtml]
+[C:/Users/User/OneDrive/Desktop/OOAD_repo/Implementacija/OffroadAdventure/OffroadAdventure/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-uczt0i8nxt

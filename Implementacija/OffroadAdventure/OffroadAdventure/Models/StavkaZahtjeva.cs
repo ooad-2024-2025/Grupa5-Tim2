@@ -13,6 +13,10 @@ namespace OffroadAdventure.Models
         [ForeignKey("Vozilo")]
         public int VoziloId { get; set; }
 
+        public Vozilo Vozilo { get; set; }
+
+        public ZahtjevZaRentanje ZahtjevZaRentanje { get; set; }    
+
         public StavkaZahtjeva() { }
     }
 }

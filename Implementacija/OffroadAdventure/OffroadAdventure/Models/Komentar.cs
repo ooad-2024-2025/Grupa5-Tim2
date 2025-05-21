@@ -11,12 +11,12 @@ namespace OffroadAdventure.Models
         [Key]
         public int Id { get; set; }
         [ForeignKey("User")]
-        public int autor_id { get; set; }
+        public string autor_id { get; set; }
         public int ocjena { get; set; }
         public string tekst { get; set; }
         public DateTime datum { get; set; }
 
-        
+        public User user { get; set; }  
         public Komentar() { }
     }
 }

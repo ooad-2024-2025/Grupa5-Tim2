@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8JV14xD9JLAvL2akYzkmSPM8OrKCGxk3/Kc0vnPY0qA=",
+  "Hash": "+Gnoopz0REu6atxNYPtwVeRTz0enRaMcVla7GYGjNzA=",
   "Source": "OffroadAdventure",
   "BasePath": "_content/OffroadAdventure",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "OffroadAdventure\\wwwroot",
       "Source": "OffroadAdventure",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "Pattern": "**"
     }
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.14\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "OffroadAdventure#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -1295,13 +1295,13 @@
       "Integrity": "O4bAcUZ8Sx4KwrJyXQuZhKkNopHdVlf5Zl1YNYyBs5s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css"
+      "OriginalItemSpec": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "OffroadAdventure#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -1316,13 +1316,13 @@
       "Integrity": "O4bAcUZ8Sx4KwrJyXQuZhKkNopHdVlf5Zl1YNYyBs5s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\css\\site.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1333,17 +1333,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fosamezn9b",
-      "Integrity": "r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0=",
+      "Fingerprint": "z76pecch2i",
+      "Integrity": "QZbWpil5WkbzXSf6fMxL3I/xLDFDEGtBHA7ppguGchQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\favicon.ico",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -1361,10 +1361,73 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\atv.png",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "BasePath": "_content/OffroadAdventure",
+      "RelativePath": "img/atv#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nrmt4ls8sq",
+      "Integrity": "g9D259G4OD5JxplkkUdcsM+9Nv8gKcRTjMdi/mlZ4NY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\atv.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\logo.png",
+      "SourceId": "OffroadAdventure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "BasePath": "_content/OffroadAdventure",
+      "RelativePath": "img/logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5f1p2zeuht",
+      "Integrity": "jx4TG02kbyjVCNL9K4fottq0n7XoC/9ugn6xVPoJ+TA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\message-icon.png",
+      "SourceId": "OffroadAdventure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "BasePath": "_content/OffroadAdventure",
+      "RelativePath": "img/message-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qfzwsl7laq",
+      "Integrity": "msTkm+UZemCH14i7RgnLM55HS7M+wwKQpz9nDsRiFNE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\message-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\js\\site.js",
+      "SourceId": "OffroadAdventure",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1375,17 +1438,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fr7q2aak1r",
-      "Integrity": "y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=",
+      "Fingerprint": "xtxxf3hu2r",
+      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1403,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1424,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1445,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1466,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1487,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1508,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1529,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1550,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1571,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1592,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1613,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1634,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1655,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1676,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1697,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1718,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1739,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1760,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1781,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1802,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1823,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1844,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1865,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1886,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1907,10 +1970,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1928,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1949,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1970,10 +2033,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1991,10 +2054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2012,10 +2075,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -2033,10 +2096,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2054,10 +2117,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2075,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2096,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2117,10 +2180,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2138,10 +2201,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2159,10 +2222,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2180,10 +2243,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2201,10 +2264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2222,10 +2285,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2243,10 +2306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2264,10 +2327,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2285,10 +2348,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2306,10 +2369,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -2320,17 +2383,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z6qzljqjd0",
-      "Integrity": "WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=",
+      "Fingerprint": "81b7ukuj9c",
+      "Integrity": "ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2348,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2369,10 +2432,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2390,10 +2453,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2404,17 +2467,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jfsiqqwiad",
-      "Integrity": "kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=",
+      "Fingerprint": "mlv21k5csn",
+      "Integrity": "hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2425,17 +2488,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gcjdx5jb8l",
-      "Integrity": "0HeMWyQUbTbe7SGnSYbjj9+HVA0hKDmEUtbYoTKe+Bk=",
+      "Fingerprint": "ay5nd8zt9x",
+      "Integrity": "4jrcLBsi0Ugm8iLKdqDsAyaCDjkscYZdoGuNH/zqs4E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2446,17 +2509,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "35gxhxa0gh",
-      "Integrity": "90Rlzuz8pIZK4g9o2I7nGK+9n5cU9Rbdt4GtxRO5arA=",
+      "Fingerprint": "9oaff4kq20",
+      "Integrity": "N11IyJpHTgDcSCb3AfX4VrBnpGQeem1NoNzzgcXVyCc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2474,10 +2537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2495,10 +2558,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -2509,17 +2572,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xzw0cte36n",
-      "Integrity": "85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=",
+      "Fingerprint": "x0q3zqp4vz",
+      "Integrity": "geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2537,10 +2600,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2558,10 +2621,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "OffroadAdventure",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\",
       "BasePath": "_content/OffroadAdventure",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2572,8 +2635,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l3n5xuwxn8",
-      "Integrity": "z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=",
+      "Fingerprint": "356vix0kms",
+      "Integrity": "16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
@@ -2582,7 +2645,7 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2591,7 +2654,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "341"
+          "Value": "10585"
         },
         {
           "Name": "Content-Type",
@@ -2599,11 +2662,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0=\""
+          "Value": "\"QZbWpil5WkbzXSf6fMxL3I/xLDFDEGtBHA7ppguGchQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 20 May 2025 16:22:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2613,13 +2676,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0="
+          "Value": "sha256-QZbWpil5WkbzXSf6fMxL3I/xLDFDEGtBHA7ppguGchQ="
         }
       ]
     },
     {
-      "Route": "css/site.fosamezn9b.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\css\\site.css",
+      "Route": "css/site.z76pecch2i.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2628,7 +2691,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "341"
+          "Value": "10585"
         },
         {
           "Name": "Content-Type",
@@ -2636,11 +2699,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0=\""
+          "Value": "\"QZbWpil5WkbzXSf6fMxL3I/xLDFDEGtBHA7ppguGchQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 20 May 2025 16:22:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2650,7 +2713,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fosamezn9b"
+          "Value": "z76pecch2i"
         },
         {
           "Name": "label",
@@ -2658,13 +2721,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-r22M7xOahcMheWCkoVof2Nt7pQmj7mMSFKTei+SfmQ0="
+          "Value": "sha256-QZbWpil5WkbzXSf6fMxL3I/xLDFDEGtBHA7ppguGchQ="
         }
       ]
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2685,7 +2748,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2709,7 +2772,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2730,7 +2793,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4965,8 +5028,8 @@
       ]
     },
     {
-      "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\js\\site.js",
+      "Route": "img/atv.nrmt4ls8sq.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\atv.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4975,19 +5038,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "394376"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "\"g9D259G4OD5JxplkkUdcsM+9Nv8gKcRTjMdi/mlZ4NY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 15 Apr 2025 21:40:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4997,21 +5060,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
+          "Value": "nrmt4ls8sq"
         },
         {
           "Name": "label",
-          "Value": "js/site.js"
+          "Value": "img/atv.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-g9D259G4OD5JxplkkUdcsM+9Nv8gKcRTjMdi/mlZ4NY="
         }
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\js\\site.js",
+      "Route": "img/atv.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\atv.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5020,7 +5083,208 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "394376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g9D259G4OD5JxplkkUdcsM+9Nv8gKcRTjMdi/mlZ4NY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 15 Apr 2025 21:40:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g9D259G4OD5JxplkkUdcsM+9Nv8gKcRTjMdi/mlZ4NY="
+        }
+      ]
+    },
+    {
+      "Route": "img/logo.5f1p2zeuht.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1612934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jx4TG02kbyjVCNL9K4fottq0n7XoC/9ugn6xVPoJ+TA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 20:10:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5f1p2zeuht"
+        },
+        {
+          "Name": "label",
+          "Value": "img/logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jx4TG02kbyjVCNL9K4fottq0n7XoC/9ugn6xVPoJ+TA="
+        }
+      ]
+    },
+    {
+      "Route": "img/logo.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1612934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jx4TG02kbyjVCNL9K4fottq0n7XoC/9ugn6xVPoJ+TA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 20:10:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jx4TG02kbyjVCNL9K4fottq0n7XoC/9ugn6xVPoJ+TA="
+        }
+      ]
+    },
+    {
+      "Route": "img/message-icon.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\message-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"msTkm+UZemCH14i7RgnLM55HS7M+wwKQpz9nDsRiFNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:25:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-msTkm+UZemCH14i7RgnLM55HS7M+wwKQpz9nDsRiFNE="
+        }
+      ]
+    },
+    {
+      "Route": "img/message-icon.qfzwsl7laq.png",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\img\\message-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"msTkm+UZemCH14i7RgnLM55HS7M+wwKQpz9nDsRiFNE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 20:25:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qfzwsl7laq"
+        },
+        {
+          "Name": "label",
+          "Value": "img/message-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-msTkm+UZemCH14i7RgnLM55HS7M+wwKQpz9nDsRiFNE="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
         },
         {
           "Name": "Content-Type",
@@ -5028,11 +5292,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5042,13 +5306,58 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.xtxxf3hu2r.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "231"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xtxxf3hu2r"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
         }
       ]
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5069,7 +5378,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5085,7 +5394,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5106,7 +5415,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5130,7 +5439,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5151,7 +5460,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5167,7 +5476,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.bpk8xqwxhs.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5188,7 +5497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5212,7 +5521,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5233,7 +5542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5249,7 +5558,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5270,7 +5579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5294,7 +5603,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5315,7 +5624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5331,7 +5640,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.mpyigms19s.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5352,7 +5661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5376,7 +5685,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5397,7 +5706,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5413,7 +5722,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5434,7 +5743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5458,7 +5767,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5479,7 +5788,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5495,7 +5804,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.9b9oa1qrmt.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5516,7 +5825,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5540,7 +5849,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5561,7 +5870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5577,7 +5886,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5598,7 +5907,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5622,7 +5931,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5643,7 +5952,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5659,7 +5968,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.ve6x09088i.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5680,7 +5989,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5704,7 +6013,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5725,7 +6034,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5749,7 +6058,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5770,7 +6079,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5786,7 +6095,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5807,7 +6116,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5823,7 +6132,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5844,7 +6153,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5868,7 +6177,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5889,7 +6198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5905,7 +6214,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5926,7 +6235,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5950,7 +6259,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5971,7 +6280,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5987,7 +6296,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.unj9p35syc.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6008,7 +6317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6032,7 +6341,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6053,7 +6362,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6069,7 +6378,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6090,7 +6399,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6114,7 +6423,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6135,7 +6444,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6151,7 +6460,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6172,7 +6481,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6188,7 +6497,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6209,7 +6518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6225,7 +6534,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6246,7 +6555,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6270,7 +6579,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.n1oizzvkh6.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6291,7 +6600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6315,7 +6624,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.q2ku51ktnl.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6336,7 +6645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6360,7 +6669,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.7na4sro3qu.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6381,7 +6690,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6405,7 +6714,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6426,7 +6735,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6442,7 +6751,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6463,7 +6772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6487,7 +6796,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6508,7 +6817,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6524,7 +6833,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6545,7 +6854,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6561,7 +6870,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6582,7 +6891,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6598,7 +6907,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6619,7 +6928,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6643,7 +6952,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.f8imaxxbri.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6664,7 +6973,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6688,7 +6997,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.0wve5yxp74.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6709,7 +7018,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6733,7 +7042,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6754,7 +7063,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6770,7 +7079,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6791,7 +7100,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6815,7 +7124,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6836,7 +7145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6852,7 +7161,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6873,7 +7182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6889,7 +7198,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6910,7 +7219,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6926,7 +7235,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6947,7 +7256,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6971,7 +7280,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.npxfuf8dg6.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6992,7 +7301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7016,7 +7325,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7037,7 +7346,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7053,7 +7362,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7074,7 +7383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7098,7 +7407,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7119,7 +7428,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7135,7 +7444,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.16095smhkz.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7156,7 +7465,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7180,7 +7489,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7201,7 +7510,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7217,7 +7526,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7238,7 +7547,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7254,7 +7563,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7275,7 +7584,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7299,7 +7608,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.b4skse8du6.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7320,7 +7629,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7344,7 +7653,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7365,7 +7674,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7381,7 +7690,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7402,7 +7711,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7426,7 +7735,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7447,7 +7756,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7463,7 +7772,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7484,7 +7793,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7500,7 +7809,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7521,7 +7830,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7545,7 +7854,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7566,7 +7875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7582,7 +7891,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.u3xrusw2ol.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7603,7 +7912,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7627,7 +7936,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.tey0rigmnh.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7648,7 +7957,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:56 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7672,7 +7981,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7693,7 +8002,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7709,7 +8018,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7730,7 +8039,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7754,7 +8063,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7775,7 +8084,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7791,7 +8100,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.l2av4jpuoj.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7812,7 +8121,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7836,7 +8145,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.25iw1kog22.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7857,7 +8166,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7881,7 +8190,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7902,7 +8211,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7918,7 +8227,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7939,7 +8248,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7963,7 +8272,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7984,7 +8293,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8000,7 +8309,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8021,7 +8330,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8037,7 +8346,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8058,7 +8367,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8082,7 +8391,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8103,7 +8412,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8119,7 +8428,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.m39kt2b5c9.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8140,7 +8449,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8164,7 +8473,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8185,7 +8494,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8201,7 +8510,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8222,7 +8531,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8238,7 +8547,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8259,7 +8568,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8283,7 +8592,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.um2aeqy4ik.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8304,7 +8613,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8328,7 +8637,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8349,7 +8658,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8365,7 +8674,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8386,7 +8695,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8410,7 +8719,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8431,7 +8740,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8447,7 +8756,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8468,7 +8777,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8484,7 +8793,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8505,7 +8814,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8521,7 +8830,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8542,7 +8851,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8566,7 +8875,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.zwph15dxgs.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8587,7 +8896,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8611,7 +8920,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.o4kw7cc6tf.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8632,7 +8941,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8656,7 +8965,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8665,7 +8974,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1131"
+          "Value": "1153"
         },
         {
           "Name": "Content-Type",
@@ -8673,11 +8982,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=\""
+          "Value": "\"ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8687,13 +8996,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A="
+          "Value": "sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk="
         }
       ]
     },
     {
-      "Route": "lib/bootstrap/LICENSE.z6qzljqjd0",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8702,7 +9011,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1131"
+          "Value": "1153"
         },
         {
           "Name": "Content-Type",
@@ -8710,11 +9019,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A=\""
+          "Value": "\"ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:55 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8724,7 +9033,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "z6qzljqjd0"
+          "Value": "81b7ukuj9c"
         },
         {
           "Name": "label",
@@ -8732,13 +9041,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-WzAxfJw1u28FEBxQHehmzGhSq5tlXc9ZQXM/ZkTD69A="
+          "Value": "sha256-ZH6pA6BSx6fuHZvdaKph1DwUJ+VSYilIiEQu8ilnvqk="
         }
       ]
     },
     {
       "Route": "lib/jquery/dist/jquery.fwhahm2icz.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8759,7 +9068,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8783,7 +9092,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8804,7 +9113,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8820,7 +9129,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8841,7 +9150,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8865,7 +9174,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.dd6z7egasc.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8886,7 +9195,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8910,7 +9219,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8931,7 +9240,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8947,7 +9256,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8968,7 +9277,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8983,8 +9292,8 @@
       ]
     },
     {
-      "Route": "lib/jquery/LICENSE.jfsiqqwiad.txt",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8993,7 +9302,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1097"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -9001,11 +9310,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=\""
+          "Value": "\"hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9015,7 +9324,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jfsiqqwiad"
+          "Value": "mlv21k5csn"
         },
         {
           "Name": "label",
@@ -9023,13 +9332,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU="
+          "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
         }
       ]
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9038,7 +9347,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1097"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -9046,11 +9355,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU=\""
+          "Value": "\"hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9060,13 +9369,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kR0ThRjy07+hq4p08nfdkjN+pI94Gj2rK5lyE0buITU="
+          "Value": "sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/dist/additional-methods.gcjdx5jb8l.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9075,7 +9384,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51466"
+          "Value": "52977"
         },
         {
           "Name": "Content-Type",
@@ -9083,11 +9392,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0HeMWyQUbTbe7SGnSYbjj9+HVA0hKDmEUtbYoTKe+Bk=\""
+          "Value": "\"4jrcLBsi0Ugm8iLKdqDsAyaCDjkscYZdoGuNH/zqs4E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9097,7 +9406,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gcjdx5jb8l"
+          "Value": "ay5nd8zt9x"
         },
         {
           "Name": "label",
@@ -9105,13 +9414,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0HeMWyQUbTbe7SGnSYbjj9+HVA0hKDmEUtbYoTKe+Bk="
+          "Value": "sha256-4jrcLBsi0Ugm8iLKdqDsAyaCDjkscYZdoGuNH/zqs4E="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9120,7 +9429,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "51466"
+          "Value": "52977"
         },
         {
           "Name": "Content-Type",
@@ -9128,11 +9437,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0HeMWyQUbTbe7SGnSYbjj9+HVA0hKDmEUtbYoTKe+Bk=\""
+          "Value": "\"4jrcLBsi0Ugm8iLKdqDsAyaCDjkscYZdoGuNH/zqs4E=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9142,13 +9451,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0HeMWyQUbTbe7SGnSYbjj9+HVA0hKDmEUtbYoTKe+Bk="
+          "Value": "sha256-4jrcLBsi0Ugm8iLKdqDsAyaCDjkscYZdoGuNH/zqs4E="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/dist/additional-methods.min.35gxhxa0gh.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9157,7 +9466,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22174"
+          "Value": "22177"
         },
         {
           "Name": "Content-Type",
@@ -9165,11 +9474,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"90Rlzuz8pIZK4g9o2I7nGK+9n5cU9Rbdt4GtxRO5arA=\""
+          "Value": "\"N11IyJpHTgDcSCb3AfX4VrBnpGQeem1NoNzzgcXVyCc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9179,7 +9488,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "35gxhxa0gh"
+          "Value": "9oaff4kq20"
         },
         {
           "Name": "label",
@@ -9187,13 +9496,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-90Rlzuz8pIZK4g9o2I7nGK+9n5cU9Rbdt4GtxRO5arA="
+          "Value": "sha256-N11IyJpHTgDcSCb3AfX4VrBnpGQeem1NoNzzgcXVyCc="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9202,7 +9511,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "22174"
+          "Value": "22177"
         },
         {
           "Name": "Content-Type",
@@ -9210,11 +9519,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"90Rlzuz8pIZK4g9o2I7nGK+9n5cU9Rbdt4GtxRO5arA=\""
+          "Value": "\"N11IyJpHTgDcSCb3AfX4VrBnpGQeem1NoNzzgcXVyCc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9224,13 +9533,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-90Rlzuz8pIZK4g9o2I7nGK+9n5cU9Rbdt4GtxRO5arA="
+          "Value": "sha256-N11IyJpHTgDcSCb3AfX4VrBnpGQeem1NoNzzgcXVyCc="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9251,7 +9560,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9267,7 +9576,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.b7iojwaux1.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9288,7 +9597,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9312,7 +9621,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9333,7 +9642,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9349,7 +9658,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.pzqfkb6aqo.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9370,7 +9679,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9394,7 +9703,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9403,7 +9712,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1095"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -9411,11 +9720,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=\""
+          "Value": "\"geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9425,13 +9734,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA="
+          "Value": "sha256-geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw="
         }
       ]
     },
     {
-      "Route": "lib/jquery-validation/LICENSE.xzw0cte36n.md",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9440,7 +9749,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1095"
+          "Value": "1117"
         },
         {
           "Name": "Content-Type",
@@ -9448,11 +9757,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA=\""
+          "Value": "\"geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9462,7 +9771,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xzw0cte36n"
+          "Value": "x0q3zqp4vz"
         },
         {
           "Name": "label",
@@ -9470,13 +9779,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-85iHjKszi4aWOL2sGurna/OsEbK4nabgtovBpkVzNEA="
+          "Value": "sha256-geHEkw/WGPdaHQMRq5HuNY9snliNzU/y2OW8ycnhGXw="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9497,7 +9806,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9521,7 +9830,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9542,7 +9851,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9558,7 +9867,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9579,7 +9888,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9603,7 +9912,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9624,7 +9933,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9639,8 +9948,8 @@
       ]
     },
     {
-      "Route": "lib/jquery-validation-unobtrusive/LICENSE.l3n5xuwxn8.txt",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9649,7 +9958,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1116"
+          "Value": "1139"
         },
         {
           "Name": "Content-Type",
@@ -9657,11 +9966,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=\""
+          "Value": "\"16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9671,7 +9980,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "l3n5xuwxn8"
+          "Value": "356vix0kms"
         },
         {
           "Name": "label",
@@ -9679,13 +9988,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA="
+          "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
         }
       ]
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9694,7 +10003,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1116"
+          "Value": "1139"
         },
         {
           "Name": "Content-Type",
@@ -9702,11 +10011,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA=\""
+          "Value": "\"16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 07:19:57 GMT"
+          "Value": "Tue, 06 May 2025 23:05:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9716,13 +10025,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-z8IfXovWVa6ZfuyRYTi3B7HSkLgycsAqlcn4IbjIcxA="
+          "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
         }
       ]
     },
     {
       "Route": "OffroadAdventure.bundle.scp.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9743,7 +10052,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 13:11:25 GMT"
+          "Value": "Tue, 06 May 2025 23:06:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9759,7 +10068,7 @@
     },
     {
       "Route": "OffroadAdventure.rsrihyndqy.bundle.scp.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OffroadAdventure.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9780,7 +10089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 13:11:25 GMT"
+          "Value": "Tue, 06 May 2025 23:06:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9804,7 +10113,7 @@
     },
     {
       "Route": "OffroadAdventure.rsrihyndqy.styles.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9825,7 +10134,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 13:11:25 GMT"
+          "Value": "Tue, 06 May 2025 23:06:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9849,7 +10158,7 @@
     },
     {
       "Route": "OffroadAdventure.styles.css",
-      "AssetFile": "C:\\Users\\User\\Desktop\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css",
+      "AssetFile": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\Debug\\net8.0\\scopedcss\\bundle\\OffroadAdventure.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9870,7 +10179,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 18 May 2025 13:11:25 GMT"
+          "Value": "Tue, 06 May 2025 23:06:15 GMT"
         },
         {
           "Name": "Cache-Control",

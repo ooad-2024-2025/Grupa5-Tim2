@@ -17,6 +17,599 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+/*Izgled elemenata na NavBar*/
+
+.custom-navbar {
+    background-color: #f15a0a;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem; 
 }
+
+.brand-text {
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-link-custom {
+    color: white !important;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.btn-login {
+    background-color: white;
+    color: #0d6efd;
+    border: 0.5px solid #0d6efd;
+}
+
+.btn-register {
+    background-color: white;
+    color: #0d6efd;
+    border: 0.5px solid #0d6efd;
+}
+/*Izgled elemenata na Home kartici*/
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.left-side .atv-img {
+    width: 400px;
+    height: auto;
+    margin-left: -200px;
+}
+
+.right-side {
+    max-width: 600px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.offer-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: #d3d3d3;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+.bottom-links {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+    .bottom-links a {
+        color: black;
+        text-decoration: underline;
+    }
+
+/*Izgled elemanata na Ponuda vozila kartici */
+
+
+.vozila-header {
+    padding-top:120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    max-width: 750px;
+}
+
+    .vozila-header h2 {
+        font-size: 2.2rem;
+        margin: 0;
+    }
+
+.vozila-datum {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ .vozila-datum input {
+    padding: 4px 8px;
+    max-width: 150px;
+ }
+
+.vozila-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+    max-width: 750px;
+}
+
+.search-box {
+    padding: 5px 10px;
+    flex-grow: 1;
+}
+
+.vozila-body {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.vozila-lijeva-strana {
+    flex: 3;
+    max-width: 750px;
+    margin-left: 0;
+}
+
+.lista-scroll {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.vozila-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.vozilo-kartica {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vozilo-slika {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin-right: 20px;
+}
+
+.vozilo-info {
+    flex-grow: 1;
+}
+
+.vozilo-cijena {
+    text-align: right;
+    font-weight: bold;
+}
+
+.vozila-desna-strana {
+    margin-left: 80px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    font-size: 1.5rem;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.saznaj-vise {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+.btn-rezervisi {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/*Izgled elemenata na saznajte vise kartici*/
+
+.saznaj-wrapper {
+    max-width: 800px;
+    margin: 150px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.saznaj-wrapper h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.saznaj-wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    display: inline-block;
+}
+.saznaj-wrapper ul li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.btn-saznaj {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/*Izgled elemenata za karticu rezervacija*/
+.rezervacija-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 100px 40px;
+    gap: 4rem;
+}
+
+.forma-strana {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tekst-strana {
+    flex: 1;
+    font-size: 1.1rem;
+    margin-top: 80px;
+    margin-left: 40px;
+    flex-direction: column;
+}
+
+.rezervacija-wrapper h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.input-full {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+    .form-row input {
+        flex: 1;
+        padding: 10px;
+    }
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px;
+    resize: vertical;
+}
+
+.dugmici {
+    display: flex;
+    gap: 10px;
+}
+
+    .dugmici button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+.cijena-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/*Igled elemenata za ONama karticu*/
+.onama-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px 40px 40px;
+    gap: 4rem;
+}
+
+.onama-tekst {
+    margin-top:80px;
+    flex: 2;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-left: 0;
+}
+
+    .onama-tekst h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+.onama-mapa {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+    .onama-mapa iframe {
+        margin-right: -900px;
+        width: 700px;
+        height: 500px;
+        border: none;
+    }
+
+.kontakt-info {
+    margin-top: 15px;
+    color: #f15a0a;
+    font-weight: 500;
+    line-height: 1.6;
+}
+/*Izgled elemenata u Recenzije kartici*/
+.recenzije-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 40px;
+    gap: 3rem;
+}
+
+.recenzije-lijeva {
+    flex: 3;
+}
+
+.recenzije-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-ocjena {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+    .sort-ocjena select {
+        padding: 6px 10px;
+    }
+
+.prosjek {
+    font-weight: bold;
+}
+
+.recenzije-lista {
+    background-color: #f1f1f1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.recenzija-kartica {
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.korisnik {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.zvjezdice {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.odgovor-input {
+    padding: 6px 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.recenzije-desna {
+    margin-top:200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+    .recenzije-desna h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+.zvjezdice-ocjena {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.komentar-input {
+    width: 100%;
+    padding: 8px 10px;
+}
+
+.btn-objavi {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+}
+.star {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+    .star.selected {
+        color: #f5b301;
+    }
+    /*Elementi za izgled prozora Notifikacija*/
+
+.notification-container {
+    position: fixed;
+    top: 100px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.notification-link {
+    color: black !important;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    z-index: 10;
+}
+
+.notification-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.notification-popup {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    margin-top: 8px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 240px;
+    font-size: 0.95rem;
+}
+
+.login-link {
+    color: #007bff;
+    text-decoration: underline;
+}
+/*Izgled elemenata za karticno placanje*/
+.kartica-wrapper {
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .kartica-wrapper h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+.kartica-form {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kartica-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+    .kartica-row label {
+        flex: 1;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+
+    .kartica-row input {
+        flex: 2;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+.kartica-datum {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .kartica-datum input {
+        width: 80px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+.kartica-dugme {
+    margin-top: 20px;
+    background-color: #f15a0a;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+

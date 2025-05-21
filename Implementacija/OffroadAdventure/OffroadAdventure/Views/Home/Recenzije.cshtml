@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Recenzije";
+}
+
+<div class="recenzije-wrapper">
+    <div class="recenzije-lijeva">
+        <div class="recenzije-header">
+            <h2>Recenzije</h2>
+            <div class="sort-ocjena">
+                <select>
+                    <option>Sortiraj po ocjeni</option>
+                </select>
+                <span class="prosjek">Prosječna ocjena: 4,6/5,0</span>
+            </div>
+        </div>
+
+        <div class="recenzije-lista">
+            @for (int i = 0; i < 3; i++)
+            {
+                <div class="recenzija-kartica">
+                    <div class="korisnik">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" class="avatar" />
+                        <div>
+                            <strong>Korisnik</strong>
+                            <p>Komentar</p>
+                        </div>
+                    </div>
+                    <div class="zvjezdice">★ ★ ★ ★ ☆</div>
+                    <input type="text" class="odgovor-input" placeholder="Ostavite odgovor" />
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="recenzije-desna">
+        <h3>Ocijeni uslugu</h3>
+        <div class="zvjezdice-ocjena">
+            @for (int i = 1; i <= 5; i++)
+            {
+                <span class="star" data-value="@i">&#9733;</span>
+            }
+        </div>
+        <input type="hidden" id="ocjenaInput" name="ocjena" value="0" />
+        <input type="text" placeholder="Ostavi komentar" class="komentar-input" />
+        <button class="btn-objavi">Objavi</button>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const zvjezdice = document.querySelectorAll('.star');
+        const ocjenaInput = document.getElementById('ocjenaInput');
+
+        zvjezdice.forEach(star => {
+            star.addEventListener('mouseover', () => {
+                const val = star.getAttribute('data-value');
+                highlightStars(val);
+            });
+
+            star.addEventListener('click', () => {
+                const val = star.getAttribute('data-value');
+                ocjenaInput.value = val;
+            });
+
+            star.addEventListener('mouseout', () => {
+                highlightStars(ocjenaInput.value);
+            });
+        });
+
+        function highlightStars(value) {
+            zvjezdice.forEach(star => {
+                if (star.getAttribute('data-value') <= value) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+        }
+
+        highlightStars(0);
+    </script>
+}

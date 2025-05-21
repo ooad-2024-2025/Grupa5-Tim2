@@ -11,7 +11,7 @@ namespace OffroadAdventure.Models
         public int id { get; set; }
         
         [ForeignKey("User")]
-        public int korisnik_id { get; set; }
+        public string korisnik_id { get; set; }
         public DateTime datumOd { get; set; }
         public DateTime datumDo { get; set; }
         public int brojVozila { get; set; }
@@ -21,6 +21,8 @@ namespace OffroadAdventure.Models
         public double vrijemeTrajanja { get; set; }
 
         public ZahtjevZaRentanje() { }
+
+        public User User { get; set; }  
 
     }
 }
