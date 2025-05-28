@@ -8064,11 +8064,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\OffroadAdventure.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\OOADrepo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\OffroadAdventure.csproj",
       "projectName": "OffroadAdventure",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\OffroadAdventure.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\OOADrepo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\OffroadAdventure.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\OOADrepo\\Implementacija\\OffroadAdventure\\OffroadAdventure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8089,8 +8089,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\KlaseOffroadAdventure\\KlaseOffroadAdventure.csproj": {
-              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\OOAD_repo\\Implementacija\\OffroadAdventure\\KlaseOffroadAdventure\\KlaseOffroadAdventure.csproj"
+            "C:\\Users\\User\\Desktop\\OOADrepo\\Implementacija\\OffroadAdventure\\KlaseOffroadAdventure\\KlaseOffroadAdventure.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\OOADrepo\\Implementacija\\OffroadAdventure\\KlaseOffroadAdventure\\KlaseOffroadAdventure.csproj"
             }
           }
         }
@@ -8155,7 +8155,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

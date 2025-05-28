@@ -18,5 +18,7 @@ namespace OffroadAdventure.Models
 
         public User user { get; set; }  
         public Komentar() { }
+
+        
     }
 }
