@@ -16,7 +16,8 @@ namespace OffroadAdventure.Models
         public DateTime datumDo { get; set; }
         public int brojVozila { get; set; }
 
-        public StatusZahtjeva status { get; set; } 
+        public StatusZahtjeva status { get; set; }
+        [EnumDataType(typeof(StatusZahtjeva))] public StatusZahtjeva statusZahtjeva { get; set; }
         public double popust { get; set; }
         public double vrijemeTrajanja { get; set; }
 

@@ -15,8 +15,10 @@ namespace OffroadAdventure.Models
 
         public Vozilo Vozilo { get; set; }
 
-        public ZahtjevZaRentanje ZahtjevZaRentanje { get; set; }    
-
+        public ZahtjevZaRentanje ZahtjevZaRentanje { get; set; }
+            
+        
         public StavkaZahtjeva() { }
+        
     }
 }

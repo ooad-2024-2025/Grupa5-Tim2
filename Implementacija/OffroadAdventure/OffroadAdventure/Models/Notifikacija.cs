@@ -13,7 +13,8 @@ namespace OffroadAdventure.Models
         public string primalac_id { get; set; }
         public string tekst { get; set; }
         public DateTime datum { get; set; }
-        public StatusNotifikacije status { get; set; } 
+        public StatusNotifikacije status { get; set; }
+        [EnumDataType(typeof(StatusNotifikacije))] public StatusNotifikacije statusNotifikacije { get; set; }
         public Notifikacija() { }
         
         public User User { get; set; }  
