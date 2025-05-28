@@ -352,12 +352,12 @@ textarea {
 .onama-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 80px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
     gap: 4rem;
 }
 
 .onama-tekst {
-    margin-top:80px;
+    margin-top:10px;
     flex: 2;
     font-size: 1rem;
     line-height: 1.6;
@@ -507,7 +507,7 @@ textarea {
     /*Elementi za izgled prozora Notifikacija*/
 
 .notification-container {
-    position: fixed;
+    position: fixed ;
     top: 100px;
     right: 40px;
     z-index: 1000;

@@ -2,6 +2,9 @@
     ViewData["Title"] = "O nama";
 }
 
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
 <div class="onama-wrapper">
     <div class="onama-tekst">
         <h2>O nama</h2>
@@ -25,17 +28,105 @@
         <p>Mi ne iznajmljujemo samo vozila – mi ti pomažemo da stvoriš priče koje ćeš dugo pamtiti.</p>
 
         <p><strong>OffroadAdventure – jer prava avantura počinje gdje asfalt prestaje.</strong></p>
-    </div>
-
-    <div class="onama-mapa">
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.339603490976!2d18.69824977661909!3d43.36992267070576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134cd158cb5bcbab%3A0x83d1bd87db0f5a4b!2sCamp%20Sutjeska!5e0!3m2!1sen!2sba!4v1747697494690!5m2!1sen!2sba" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-        <div class="kontakt-info">
+        <div class="kontakt-info" style="margin-top: 20px;">
             <p>📍 Popov most, Tjentište 73311</p>
             <p>📞 038 250 470</p>
             <p>📧 OffroadAdventure@gmail.com</p>
         </div>
     </div>
+
+    <div class="onama-mapa">
+        <form id="rutaForm" style="width: 100%;">
+            <h4>Planiraj dolazak</h4>
+            <label for="grad">Odaberi grad:</label>
+            <select id="grad" required style="width: 100%; padding: 8px; margin-bottom: 10px;">
+                <option value="Bihać">Bihać</option>
+                <option value="Bosanska Krupa">Bosanska Krupa</option>
+                <option value="Cazin">Cazin</option>
+                <option value="Čapljina">Čapljina</option>
+                <option value="Goražde">Goražde</option>
+                <option value="Gračanica">Gračanica</option>
+                <option value="Gradačac">Gradačac</option>
+                <option value="Konjic">Konjic</option>
+                <option value="Livno">Livno</option>
+                <option value="Ljubuški">Ljubuški</option>
+                <option value="Lukavac">Lukavac</option>
+                <option value="Mostar">Mostar</option>
+                <option value="Novi Travnik">Novi Travnik</option>
+                <option value="Orašje">Orašje</option>
+                <option value="Sarajevo">Sarajevo</option>
+                <option value="Srebrenik">Srebrenik</option>
+                <option value="Stolac">Stolac</option>
+                <option value="Široki Brijeg">Široki Brijeg</option>
+                <option value="Tuzla">Tuzla</option>
+                <option value="Visoko">Visoko</option>
+                <option value="Zavidovići">Zavidovići</option>
+                <option value="Zenica">Zenica</option>
+                <option value="Živinice">Živinice</option>
+                <option value="Banja Luka">Banja Luka</option>
+                <option value="Bijeljina">Bijeljina</option>
+                <option value="Derventa">Derventa</option>
+                <option value="Doboj">Doboj</option>
+                <option value="Gradiška">Gradiška</option>
+                <option value="Istočno Sarajevo">Istočno Sarajevo</option>
+                <option value="Laktaši">Laktaši</option>
+                <option value="Prijedor">Prijedor</option>
+                <option value="Prnjavor">Prnjavor</option>
+                <option value="Trebinje">Trebinje</option>
+                <option value="Zvornik">Zvornik</option>
+                <option value="Brčko">Brčko</option>
+            </select>
+            <button type="submit" style="padding: 8px 16px;">Prikaži rutu</button>
+        </form>
+
+        <div id="mapa" style="height: 450px; width: 100%; border-radius: 8px; margin-top: 30px;"></div>
+    </div>
 </div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    let mapa = L.map('mapa').setView([43.370527, 18.701239], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(mapa);
+
+    let rutaLayer;
+
+    document.getElementById("rutaForm").addEventListener("submit", async function (e) {
+        e.preventDefault();
+        const grad = document.getElementById("grad").value;
+
+        try {
+            const res = await fetch("/api/lokacija/putanja", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ grad: grad })
+            });
+
+            if (!res.ok) {
+                const errorText = await res.text();
+                console.error("Greška sa servera:", errorText);
+                alert("Greška u pozivu API-ja. Detalji su prikazani u konzoli.");
+                return;
+            }
+
+            const data = await res.json();
+            console.log("Odgovor sa backend-a:", data);
+
+            const coords = data.features[0].geometry.coordinates.map(([lon, lat]) => [lat, lon]);
+
+            if (rutaLayer) {
+                mapa.removeLayer(rutaLayer);
+            }
+
+            rutaLayer = L.polyline(coords, { color: 'blue', weight: 5 }).addTo(mapa);
+            mapa.fitBounds(rutaLayer.getBounds());
+        } catch (err) {
+            console.error("Greška prilikom obrade odgovora:", err);
+            alert("Greška u obradi odgovora. Pogledaj konzolu za detalje.");
+        }
+    });
+</script>

@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "OffroadAdventure.Controllers.LokacijaController",
+    "Method": "GetRuta",
+    "RelativePath": "api/Lokacija/putanja",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "OffroadAdventure.OpenRouteServiceAPI.GradDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

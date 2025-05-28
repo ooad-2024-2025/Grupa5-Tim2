@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KlaseOffroadAdventure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffc05cf81bab4731e852e5ff56db2a4dca5a5d26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+803dfe1ae812318022769a25472267847d8b7020")]
 [assembly: System.Reflection.AssemblyProductAttribute("KlaseOffroadAdventure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KlaseOffroadAdventure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
