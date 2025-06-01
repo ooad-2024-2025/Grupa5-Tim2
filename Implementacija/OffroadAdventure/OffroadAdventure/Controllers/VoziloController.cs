@@ -152,5 +152,78 @@ namespace OffroadAdventure.Controllers
         {
             return _context.Vozilo.Any(e => e.id == id);
         }
+
+        // Metode koristene prilikom prikazivanja dostupnih vozila  
+        public IActionResult dajDostupnaVozila()
+        {
+            var dostupnaVozila = _context.Vozilo
+                .Where(v => v.dostupno == true)
+                .ToList();
+
+            return View("PonudaVozila", dostupnaVozila);
+        }
+        public IActionResult dajVozilaPoCijeni(string poredak = "asc")
+        {
+            List<Vozilo> sortiranaVozila;
+
+            if (poredak == "desc")
+            {
+                sortiranaVozila = _context.Vozilo
+                    .Where(v => v.dostupno == true)
+                    .OrderByDescending(v => v.cijenaPoDanu)
+                    .ToList();
+            }
+            else
+            {
+                sortiranaVozila = _context.Vozilo
+                    .Where(v => v.dostupno == true)
+                    .OrderBy(v => v.cijenaPoDanu)
+                    .ToList();
+            }
+
+            ViewBag.SelektovaniPoredak = poredak;
+            return View("PonudaVozila", sortiranaVozila);
+        }
+        public IActionResult dajVozilaPoTipu(string tip)
+        {
+            var filtrirani = _context.Vozilo
+                .Where(v => v.dostupno && v.tip == tip)
+                .ToList();
+            ViewBag.SelektovaniTip = tip;
+            return View("PonudaVozila", filtrirani);
+        }
+        public IActionResult Pretraga(string query)
+        {
+            List<Vozilo> rezultat;
+
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                rezultat = _context.Vozilo
+                    .Where(v => v.dostupno == true)
+                    .ToList();
+            }
+            else
+            {
+                rezultat = _context.Vozilo
+                    .Where(v => v.model.ToLower().Contains(query.ToLower()))
+                    .ToList();
+            }
+
+            ViewBag.query = query;
+            return View("PonudaVozila", rezultat);
+        }
+
+        public IActionResult Rezervacija(List<int> vozilaId)
+        {
+            var dostupnaVozila = _context.Vozilo
+                .Where(v => vozilaId.Contains(v.id))
+                .ToList();
+
+            ViewBag.OdabranaVozila = dostupnaVozila;
+            return View();
+        }
+
+
+         
     }
 }

@@ -20,8 +20,9 @@ namespace OffroadAdventure.Controllers
 
         public IActionResult PonudaVozila()
         {
-            return View();
+            return RedirectToAction("dajDostupnaVozila", "Vozilo");
         }
+
         public IActionResult SaznajteVise()
         {
             return View();
