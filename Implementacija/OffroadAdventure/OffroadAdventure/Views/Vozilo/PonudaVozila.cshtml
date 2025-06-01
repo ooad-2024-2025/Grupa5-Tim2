@@ -1,0 +1,93 @@
+﻿@model List<OffroadAdventure.Models.Vozilo>
+
+<div class="vozila-wrapper">
+    <div class="vozila-header">
+        <h2>Trenutno dostupna vozila</h2>
+    </div>
+     <div class="vozila-filters">
+                    @{
+                        string poredak = ViewBag.SelektovaniPoredak as string;
+                        var opcije = new Dictionary<string, string>
+                        {
+                            { "", "Cijena" },
+                            { "asc", "Cijena, rastuća" },
+                            { "desc", "Cijena, opadajuća" }
+                        };
+                    }
+
+                    <select class="filter-select" onchange="location = this.value;">
+                        @foreach (var opcija in opcije)
+                        {
+                            var url = string.IsNullOrEmpty(opcija.Key)
+                                ? "/Vozilo/dajDostupnaVozila"
+                                : $"/Vozilo/dajVozilaPoCijeni?poredak={opcija.Key}";
+
+                            @:<option value="@url" @(opcija.Key == poredak ? "selected=\"selected\"" : "")>@opcija.Value</option>
+                        }
+                    </select>
+
+                    @{
+                        string tip = ViewBag.SelektovaniTip as string;
+                        var tipovi = new Dictionary<string, string>
+                        {
+                            { "", "Vrsta vozila" },
+                            { "ATV", "ATV" },
+                            { "BUGGY", "Buggy" },
+                            { "UTV", "UTV" }
+                        };
+                    }
+
+                    <select class="filter-select" onchange="location = this.value;">
+                        @foreach (var t in tipovi)
+                        {
+                            var url = string.IsNullOrEmpty(t.Key)
+                                ? "/Vozilo/dajDostupnaVozila"
+                                : $"/Vozilo/dajVozilaPoTipu?tip={t.Key}";
+                            @:<option value="@url" @(t.Key == tip ? "selected=\"selected\"" : "")>@t.Value</option>
+                        }
+                    </select>
+
+                    <form asp-controller="Vozilo" asp-action="Pretraga" method="get">
+                        <input type="text" name="query" class="search-box" placeholder="Pretraži po modelu..." value="@ViewBag.querry" />
+                    </form>
+                </div>
+        <form method="get" action="/Vozilo/Rezervacija">
+        <div class="vozila-body">
+            <div class="vozila-lijeva-strana">
+               
+
+                <div class="lista-scroll">
+                    <div class="vozila-lista">
+                        @foreach (var vozilo in Model)
+                        {
+                            <div class="vozilo-kartica">
+                                
+                                <div class="vozilo-slika">
+                                    <img src="@vozilo.slikaURL" alt="Slika vozila" style="width:100%; height:auto;" />
+                                </div>
+                                <div class="vozilo-info">
+                                    <strong>@vozilo.model</strong>
+                                    <p>Tip: @vozilo.tip</p>
+                                    <p>@vozilo.cijenaPoDanu KM/dan</p>
+                                    <p>Status: @(vozilo.dostupno ? "Dostupno" : "Nije dostupno")</p>
+                                </div>
+                                <div class="vozilo-cijena">
+                                    <input type="checkbox" name="vozilaId" value="@vozilo.id" class="vozilo-checkbox" />
+                                    <span>Cijena</span>
+                                    <strong>@vozilo.cijenaPoDanu.ToString("0.00") KM</strong>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+      
+            <div class="vozila-desna-strana">
+                <p>Napravite korisnički račun.<br />Ostvarite pravo na popuste!</p>
+                <a href="/Home/SaznajteVise" class="saznaj-vise">Saznajte više</a>
+                <button type="submit" class="btn-rezervisi">Rezerviši vozilo</button>
+            </div>
+        </div>
+    </form>
+</div>

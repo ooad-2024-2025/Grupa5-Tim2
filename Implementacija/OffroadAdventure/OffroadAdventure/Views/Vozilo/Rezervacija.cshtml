@@ -7,9 +7,17 @@
         <h2>Rezervacija</h2>
 
         <form>
-            <select class="input-full">
-                <option>Odabrana vozila</option>
-            </select>
+            <div class="rezervacija-odabrana-vozila">
+                <label>Odabrana vozila:</label>
+                <ul>
+                    @foreach (var vozilo in ViewBag.OdabranaVozila as List<OffroadAdventure.Models.Vozilo>)
+                    {
+                        <li>@vozilo.model (@vozilo.tip)</li>
+                        <input type="hidden" name="vozilaId" value="@vozilo.id" />
+                    }
+                </ul>
+            </div>
+
 
             <div class="form-row">
                 <input type="text" placeholder="Ime" />
