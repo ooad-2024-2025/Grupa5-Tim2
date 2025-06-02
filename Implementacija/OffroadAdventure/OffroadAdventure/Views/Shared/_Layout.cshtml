@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@using OffroadAdventure.Models
+@inject UserManager<User> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -24,9 +28,22 @@
                         </li>
                     </ul>
 
-                    <div class="d-flex">
-                        <a class="btn btn-login me-2" asp-area="Identity" asp-page="/Account/Login">Login</a>
-                        <a class="btn btn-register" asp-area="Identity" asp-page="/Account/Register">Registracija</a>
+                    <div class="d-flex align-items-center gap-3">
+                        @{
+                            var user = User.Identity.IsAuthenticated ? await UserManager.GetUserAsync(User) : null;
+                        }
+                        @if (user != null)
+                        {
+                            <span class="text-white">@user.Ime @user.Prezime</span>
+                            <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="m-0">
+                                <button type="submit" class="btn btn-outline-light">Logout</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <a class="btn btn-login me-2" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                            <a class="btn btn-register" asp-area="Identity" asp-page="/Account/Register">Registracija</a>
+                        }
                     </div>
                 </div>
             </div>
@@ -42,6 +59,7 @@
             <p><a href="/Identity/Account/Login" class="login-link">Prijavite se</a> da bi vidjeli notifikacije.</p>
         </div>
     </div>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
