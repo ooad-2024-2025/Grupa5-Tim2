@@ -39,7 +39,10 @@
 
             <div class="dugmici">
                 <button type="button">Plati pri preuzimanju</button>
-                <button type="button" onclick="location.href='/Home/KarticnoPlacanje'">Plati karticom</button>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <button type="button" onclick="location.href='/Home/KarticnoPlacanje'">Plati karticom</button>
+                }
             </div>
 
             <div class="cijena-info">
