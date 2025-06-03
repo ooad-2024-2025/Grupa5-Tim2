@@ -7,17 +7,9 @@
         <h2>Rezervacija</h2>
 
         <form>
-            <div class="rezervacija-odabrana-vozila">
-                <label>Odabrana vozila:</label>
-                <ul>
-                    @foreach (var vozilo in ViewBag.OdabranaVozila as List<OffroadAdventure.Models.Vozilo>)
-                    {
-                        <li>@vozilo.model (@vozilo.tip)</li>
-                        <input type="hidden" name="vozilaId" value="@vozilo.id" />
-                    }
-                </ul>
-            </div>
-
+            <select class="input-full">
+                <option>Odabrana vozila</option>
+            </select>
 
             <div class="form-row">
                 <input type="text" placeholder="Ime" />
@@ -39,11 +31,13 @@
 
             <div class="dugmici">
                 <button type="button">Plati pri preuzimanju</button>
+
                 @if (User.Identity.IsAuthenticated)
                 {
                     <button type="button" onclick="location.href='/Home/KarticnoPlacanje'">Plati karticom</button>
                 }
             </div>
+
 
             <div class="cijena-info">
                 <span>Popust: 0%</span>

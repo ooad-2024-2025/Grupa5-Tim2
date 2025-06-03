@@ -6,11 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OffroadAdventure.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OffroadAdventure.Controllers
 {
     public class VoziloController : Controller
+
     {
+      
         private readonly ApplicationDbContext _context;
 
         public VoziloController(ApplicationDbContext context)
@@ -19,11 +22,13 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: Vozilo
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Vozilo.ToListAsync());
         }
 
+        [Authorize(Roles = "Administrator")]
         // GET: Vozilo/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -53,6 +58,7 @@ namespace OffroadAdventure.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Create([Bind("id,model,tip,cijenaPoDanu,dostupno,slikaURL")] Vozilo vozilo)
         {
             if (ModelState.IsValid)
@@ -65,6 +71,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: Vozilo/Edit/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -85,6 +92,7 @@ namespace OffroadAdventure.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Edit(int id, [Bind("id,model,tip,cijenaPoDanu,dostupno,slikaURL")] Vozilo vozilo)
         {
             if (id != vozilo.id)
@@ -116,6 +124,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: Vozilo/Delete/5
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -136,6 +145,7 @@ namespace OffroadAdventure.Controllers
         // POST: Vozilo/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var vozilo = await _context.Vozilo.FindAsync(id);

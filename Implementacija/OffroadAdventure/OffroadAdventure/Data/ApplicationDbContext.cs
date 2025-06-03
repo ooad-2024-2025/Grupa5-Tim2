@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using OffroadAdventure.Models;
 
-public class ApplicationDbContext :  IdentityDbContext
+public class ApplicationDbContext :  IdentityDbContext<User>
 {
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
