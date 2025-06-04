@@ -1,6 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using OffroadAdventure.Models
 @inject UserManager<User> UserManager
+@inject SignInManager<User> SignInManager
+
+@{
+    var user = User.Identity.IsAuthenticated ? await UserManager.GetUserAsync(User) : null;
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,16 +31,26 @@
                         <li class="nav-item">
                             <a class="nav-link nav-link-custom" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        @if (user != null && await UserManager.IsInRoleAsync(user, "Administrator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" asp-controller="Vozilo" asp-action="Index">Upravljaj Vozilima</a>
+                            </li>
+                        }
+                        @if (user != null && (await UserManager.IsInRoleAsync(user, "Administrator") || await UserManager.IsInRoleAsync(user, "Zaposlenik")))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" asp-controller="ZahtjevZaRentanjes" asp-action="Index">Upravljaj Zahtjevima</a>
+                            </li>
+                        }
                     </ul>
 
                     <div class="d-flex align-items-center gap-3">
-                        @{
-                            var user = User.Identity.IsAuthenticated ? await UserManager.GetUserAsync(User) : null;
-                        }
                         @if (user != null)
                         {
                             <span class="text-white">@user.Ime @user.Prezime</span>
                             <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="m-0">
+                                @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-outline-light">Logout</button>
                             </form>
                         }
@@ -50,13 +65,17 @@
         </nav>
     </header>
 
+    <!-- NOTIFIKACIJE -->
     <div class="notification-container">
         <a href="javascript:void(0);" class="notification-link" onclick="toggleNotifications()">
             <span class="notification-text">Notifikacije</span>
-            <img src="~/img/message-icon.png" alt="Notifikacije" class="notification-icon" />
+            <img src="~/img/message-icon-regular.png" alt="Notifikacije" class="notification-icon" id="notificationIcon" />
         </a>
-        <div class="notification-popup" id="notificationPopup">
-            <p><a href="/Identity/Account/Login" class="login-link">Prijavite se</a> da bi vidjeli notifikacije.</p>
+        <div class="notification-popup" id="notificationPopup" style="display:none;">
+            <div id="notificationContent">
+                <form id="hiddenForm">@Html.AntiForgeryToken()</form>
+                <p>Učitavanje notifikacija...</p>
+            </div>
         </div>
     </div>
 
@@ -71,16 +90,61 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script>
-        function toggleNotifications() {
+                function toggleNotifications() {
             const popup = document.getElementById("notificationPopup");
-            popup.style.display = (popup.style.display === "block") ? "none" : "block";
+            const visible = popup.style.display === "block";
+            popup.style.display = visible ? "none" : "block";
+
+            if (!visible) {
+                fetch('/Notifikacijas/PrikaziPopup')
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById("notificationPopup").innerHTML = html;
+
+                        fetch('/Notifikacijas/OznaciProcitane', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                            }
+                        }).then(() => {
+                            provjeriNotifikacije(); 
+                        });
+                    });
+            }
         }
 
-        document.addEventListener("click", function (event) {
-            const container = document.querySelector(".notification-container");
-            if (!container.contains(event.target)) {
-                document.getElementById("notificationPopup").style.display = "none";
-            }
+        function obrisiNotifikaciju(id) {
+            fetch(`/Notifikacijas/ObrisiJednu?id=${id}`, {
+                method: 'POST',
+                headers: {
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                }
+            }).then(response => {
+                if (response.ok) {
+                    fetch('/Notifikacijas/PrikaziPopup')
+                        .then(res => res.text())
+                        .then(html => {
+                            document.getElementById("notificationPopup").innerHTML = html;
+                        });
+                }
+            });
+        }
+                    function provjeriNotifikacije() {
+            fetch('/Notifikacijas/ProvjeriNove')
+                .then(response => response.json())
+                .then(postojeNeprocitane => {
+                    const ikona = document.getElementById("notificationIcon");
+                    if (postojeNeprocitane) {
+                        ikona.src = '/img/message-icon-alert.png';
+                    } else {
+                        ikona.src = '/img/message-icon-regular.png';
+                    }
+                });
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            provjeriNotifikacije();
         });
     </script>
 

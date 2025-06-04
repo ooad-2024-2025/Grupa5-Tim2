@@ -1,0 +1,43 @@
+﻿@model IEnumerable<OffroadAdventure.Models.Notifikacija>
+@using Microsoft.AspNetCore.Identity
+@using OffroadAdventure.Models
+@inject UserManager<User> UserManager
+@inject SignInManager<User> SignInManager
+
+
+@if (!SignInManager.IsSignedIn(User))
+{
+    <p><a href="/Identity/Account/Login" class="login-link">Prijavite se</a> da bi vidjeli notifikacije.</p>
+}
+else
+{
+    if (Model != null && Model.Any())
+    {
+        <div style="max-height: 200px; overflow-y: auto;">
+            @foreach (var not in Model)
+            {
+                var statusClass = not.status == OffroadAdventure.Models.Enums.StatusNotifikacije.PROCITANA
+                ? "notifikacija-procitana"
+                : "notifikacija-neprocitana";
+
+                <div class="@statusClass d-flex justify-content-between align-items-start px-2 py-1">
+                    <div>
+                        <div>@not.tekst</div>
+                        <small style="color: gray;">@not.datum.ToString("dd.MM.yyyy HH:mm")</small>
+                    </div>
+                    <button class="delete-btn" onclick="obrisiNotifikaciju(@not.id)">✖</button>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>Nemate notifikacija.</p>
+    }
+
+    if (User.IsInRole("Administrator"))
+    {
+        <hr />
+        <a href="/Notifikacijas/Index" class="btn btn-sm btn-primary w-100 mt-2">Upravljaj notifikacijama</a>
+    }
+}

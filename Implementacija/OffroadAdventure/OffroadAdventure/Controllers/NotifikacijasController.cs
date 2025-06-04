@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OffroadAdventure.Models;
+using OffroadAdventure.Models.Enums;
 
 namespace OffroadAdventure.Controllers
 {
@@ -13,9 +15,12 @@ namespace OffroadAdventure.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public NotifikacijasController(ApplicationDbContext context)
+        private readonly UserManager<User> _userManager;
+
+        public NotifikacijasController(ApplicationDbContext context, UserManager<User> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Notifikacijas
@@ -152,5 +157,74 @@ namespace OffroadAdventure.Controllers
         {
             return _context.Notifikacija.Any(e => e.id == id);
         }
+
+        [HttpGet]
+        [HttpGet]
+        public async Task<IActionResult> PrikaziPopup()
+        {
+            if (!User.Identity.IsAuthenticated)
+                return PartialView("NotifikacijePopUp", null);
+
+            var userId = _userManager.GetUserId(User);
+            var notifikacije = await _context.Notifikacija
+                .Where(n => n.primalac_id == userId)
+                .OrderByDescending(n => n.datum)
+                .ToListAsync();
+
+            return PartialView("NotifikacijePopUp", notifikacije);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> OznaciProcitane()
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Unauthorized();
+
+            var userId = _userManager.GetUserId(User);
+
+            var neprocitane = await _context.Notifikacija
+                .Where(n => n.primalac_id == userId && n.status == StatusNotifikacije.NEPROCITANA)
+                .ToListAsync();
+
+            foreach (var n in neprocitane)
+            {
+                n.status = StatusNotifikacije.PROCITANA;
+            }
+
+            if (neprocitane.Any())
+                await _context.SaveChangesAsync();
+
+            return Ok();
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ObrisiJednu(int id)
+        {
+            var not = await _context.Notifikacija.FindAsync(id);
+            if (not != null)
+            {
+                _context.Notifikacija.Remove(not);
+                await _context.SaveChangesAsync();
+            }
+            return Ok();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ProvjeriNove()
+        {
+            if (!User.Identity.IsAuthenticated)
+                return Json(false);
+
+            var userId = _userManager.GetUserId(User);
+            var postoji = await _context.Notifikacija
+                .AnyAsync(n => n.primalac_id == userId && n.status == StatusNotifikacije.NEPROCITANA);
+
+            return Json(postoji);
+        }
+
+
     }
 }

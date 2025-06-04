@@ -265,7 +265,7 @@ html {
 
 .saznaj-wrapper {
     max-width: 800px;
-    margin: 150px auto;
+    margin: 130px auto;
     text-align: center;
     padding: 20px;
 }
@@ -542,17 +542,39 @@ textarea {
         color: #f5b301;
     }
     /*Elementi za izgled prozora Notifikacija*/
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.notifikacija-procitana {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    background-color: #f2f2f2; /* svijetlo siva */
+}
+
+.notifikacija-neprocitana {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+}
 
 .notification-container {
-    position: fixed ;
-    top: 100px;
-    right: 40px;
-    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    padding-right: 20px;
 }
 
 .notification-link {
     color: black !important;
     text-decoration: none;
+    cursor: pointer;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -567,7 +589,7 @@ textarea {
 }
 
 .notification-popup {
-    display: none;
+    display:none;
     position: absolute;
     right: 0;
     top: 100%;
