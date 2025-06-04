@@ -12,7 +12,11 @@ namespace OffroadAdventure.Models
         
         [ForeignKey("User")]
         public string korisnik_id { get; set; }
+        [Required(ErrorMessage = "Polje mora biti popunjeno")]
+        [FutureDate(ErrorMessage = "Datum početka mora biti u budućnosti ili danas.")]
         public DateTime datumOd { get; set; }
+        [Required(ErrorMessage = "Polje mora biti popunjeno")]
+        [FutureDate(ErrorMessage = "Datum početka mora biti u budućnosti ili danas.")]
         public DateTime datumDo { get; set; }
         public int brojVozila { get; set; }
 

@@ -1,14 +1,15 @@
 ﻿@model IEnumerable<OffroadAdventure.Models.Vozilo>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "UPRAVLJANJE VOZILIMA"; //INDEX!!!!
 }
 
-<h1>Index</h1>
+<h3 class="mb-4">UPRAVLJANJE VOZILIMA</h3>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -45,14 +46,17 @@
             <td>
                 @Html.DisplayFor(modelItem => item.dostupno)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.slikaURL)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
-            </td>
+                <td>
+                    <a href="@item.slikaURL" target="_blank">
+                        <img src="@item.slikaURL" alt="Slika vozila" style="max-height: 100px;" />
+                    </a>
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info text-white">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+
         </tr>
 }
     </tbody>
