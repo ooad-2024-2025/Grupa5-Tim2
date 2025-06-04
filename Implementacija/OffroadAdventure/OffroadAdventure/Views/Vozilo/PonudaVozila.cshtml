@@ -4,64 +4,60 @@
     <div class="vozila-header">
         <h2>Trenutno dostupna vozila</h2>
     </div>
-     <div class="vozila-filters">
-                    @{
-                        string poredak = ViewBag.SelektovaniPoredak as string;
-                        var opcije = new Dictionary<string, string>
-                        {
-                            { "", "Cijena" },
-                            { "asc", "Cijena, rastuća" },
-                            { "desc", "Cijena, opadajuća" }
-                        };
-                    }
 
-                    <select class="filter-select" onchange="location = this.value;">
-                        @foreach (var opcija in opcije)
-                        {
-                            var url = string.IsNullOrEmpty(opcija.Key)
-                                ? "/Vozilo/dajDostupnaVozila"
-                                : $"/Vozilo/dajVozilaPoCijeni?poredak={opcija.Key}";
+    <div class="vozila-filters">
+        @{
+            string poredak = ViewBag.SelektovaniPoredak as string;
+            string tip = ViewBag.SelektovaniTip as string;
+            string query = ViewBag.query as string;
 
-                            @:<option value="@url" @(opcija.Key == poredak ? "selected=\"selected\"" : "")>@opcija.Value</option>
-                        }
-                    </select>
+            var opcije = new Dictionary<string, string>
+            {
+                { "", "Cijena" },
+                { "asc", "Cijena, rastuća" },
+                { "desc", "Cijena, opadajuća" }
+            };
 
-                    @{
-                        string tip = ViewBag.SelektovaniTip as string;
-                        var tipovi = new Dictionary<string, string>
-                        {
-                            { "", "Vrsta vozila" },
-                            { "ATV", "ATV" },
-                            { "BUGGY", "Buggy" },
-                            { "UTV", "UTV" }
-                        };
-                    }
+            var tipovi = new Dictionary<string, string>
+            {
+                { "", "Vrsta vozila" },
+                { "ATV", "ATV" },
+                { "BUGGY", "Buggy" },
+                { "UTV", "UTV" }
+            };
+        }
 
-                    <select class="filter-select" onchange="location = this.value;">
-                        @foreach (var t in tipovi)
-                        {
-                            var url = string.IsNullOrEmpty(t.Key)
-                                ? "/Vozilo/dajDostupnaVozila"
-                                : $"/Vozilo/dajVozilaPoTipu?tip={t.Key}";
-                            @:<option value="@url" @(t.Key == tip ? "selected=\"selected\"" : "")>@t.Value</option>
-                        }
-                    </select>
+        <select class="filter-select" onchange="location = this.value;">
+            @foreach (var opcija in opcije)
+            {
+                var url = $"/Vozilo/Filtriraj?poredak={opcija.Key}&tip={tip}&query={query}";
+                @:<option value="@url" @(opcija.Key == poredak ? "selected=\"selected\"" : "")>@opcija.Value</option>
+            }
+        </select>
 
-                    <form asp-controller="Vozilo" asp-action="Pretraga" method="get">
-                        <input type="text" name="query" class="search-box" placeholder="Pretraži po modelu..." value="@ViewBag.querry" />
-                    </form>
-                </div>
-        <form method="get" action="/Vozilo/Rezervacija">
+        <select class="filter-select" onchange="location = this.value;">
+            @foreach (var t in tipovi)
+            {
+                var url = $"/Vozilo/Filtriraj?tip={t.Key}&poredak={poredak}&query={query}";
+                @:<option value="@url" @(t.Key == tip ? "selected=\"selected\"" : "")>@t.Value</option>
+            }
+        </select>
+
+        <form asp-controller="Vozilo" asp-action="Filtriraj" method="get">
+            <input type="hidden" name="poredak" value="@poredak" />
+            <input type="hidden" name="tip" value="@tip" />
+            <input type="text" name="query" class="search-box" placeholder="Pretraži po modelu..." value="@query" />
+        </form>
+    </div>
+
+    <form method="get" action="/Vozilo/Rezervacija">
         <div class="vozila-body">
             <div class="vozila-lijeva-strana">
-               
-
                 <div class="lista-scroll">
                     <div class="vozila-lista">
                         @foreach (var vozilo in Model)
                         {
                             <div class="vozilo-kartica">
-                                
                                 <div class="vozilo-slika">
                                     <img src="@vozilo.slikaURL" alt="Slika vozila" style="width:100%; height:auto;" />
                                 </div>
@@ -82,7 +78,6 @@
                 </div>
             </div>
 
-      
             <div class="vozila-desna-strana">
                 <p>Napravite korisnički račun.<br />Ostvarite pravo na popuste!</p>
                 <a href="/Home/SaznajteVise" class="saznaj-vise">Saznajte više</a>
