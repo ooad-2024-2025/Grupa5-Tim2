@@ -164,7 +164,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // Metode koristene prilikom prikazivanja dostupnih vozila  
-        public IActionResult dajDostupnaVozila()
+       public IActionResult dajDostupnaVozila()
         {
             var dostupnaVozila = _context.Vozilo
                 .Where(v => v.dostupno == true)
@@ -233,7 +233,40 @@ namespace OffroadAdventure.Controllers
             return View();
         }
 
+        // Prethodne metode za filtriranje mozda obrisati?
+        // Sada su objedinjene u metodi filtriraj kako bi se mogla sva 3 filtera koristiti istovremeno 
+        public IActionResult Filtriraj(string poredak = "", string tip = "", string query = "")
+        {
+            var vozila = _context.Vozilo.Where(v => v.dostupno == true);
 
-         
+            if (!string.IsNullOrWhiteSpace(tip))
+            {
+                vozila = vozila.Where(v => v.tip == tip);
+            }
+
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                vozila = vozila.Where(v => v.model.ToLower().Contains(query.ToLower()));
+            }
+
+            if (poredak == "asc")
+            {
+                vozila = vozila.OrderBy(v => v.cijenaPoDanu);
+            }
+            else if (poredak == "desc")
+            {
+                vozila = vozila.OrderByDescending(v => v.cijenaPoDanu);
+            }
+
+            ViewBag.SelektovaniPoredak = poredak;
+            ViewBag.SelektovaniTip = tip;
+            ViewBag.Query = query;
+
+            return View("PonudaVozila", vozila.ToList());
+        }
+
+
+
+
     }
 }

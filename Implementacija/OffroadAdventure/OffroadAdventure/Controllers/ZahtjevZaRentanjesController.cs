@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -19,12 +20,14 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: ZahtjevZaRentanjes
+        [Authorize(Roles = "Administrator,Zaposlenik")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.ZahtjevZaRentanje.ToListAsync());
         }
 
         // GET: ZahtjevZaRentanjes/Details/5
+        [Authorize(Roles = "Administrator,Zaposlenik")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -43,6 +46,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: ZahtjevZaRentanjes/Create
+        [Authorize(Roles = "Administrator,Zaposlenik")]
         public IActionResult Create()
         {
             return View();
@@ -65,6 +69,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: ZahtjevZaRentanjes/Edit/5
+        [Authorize(Roles = "Administrator,Zaposlenik")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

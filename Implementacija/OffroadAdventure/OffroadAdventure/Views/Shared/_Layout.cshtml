@@ -45,10 +45,10 @@
                         }
                     </ul>
 
-                    <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center">
                         @if (user != null)
                         {
-                            <span class="text-white">@user.Ime @user.Prezime</span>
+                            <span class="text-white p-3">@user.Ime @user.Prezime</span>
                             <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="m-0">
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-outline-light">Logout</button>
