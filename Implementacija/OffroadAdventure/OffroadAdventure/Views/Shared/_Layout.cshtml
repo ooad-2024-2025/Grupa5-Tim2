@@ -40,7 +40,7 @@
                         @if (user != null && (await UserManager.IsInRoleAsync(user, "Administrator") || await UserManager.IsInRoleAsync(user, "Zaposlenik")))
                         {
                             <li class="nav-item">
-                                <a class="nav-link nav-link-custom" asp-controller="ZahtjevZaRentanjes" asp-action="Index">Upravljaj Zahtjevima</a>
+                                <a class="nav-link nav-link-custom" asp-controller="ZahtjevZaRentanje" asp-action="Index">Upravljaj Zahtjevima</a>
                             </li>
                         }
                     </ul>

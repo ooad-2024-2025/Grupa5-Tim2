@@ -153,4 +153,5 @@ namespace OffroadAdventure.Controllers
             return _context.Komentar.Any(e => e.Id == id);
         }
     }
+
 }

@@ -15,7 +15,7 @@
             <input type="hidden" asp-for="id" />
             <div class="form-group">
                 <label asp-for="korisnik_id" class="control-label"></label>
-                <input asp-for="korisnik_id" class="form-control" />
+                <select asp-for="korisnik_id" class="form-control" asp-items="ViewBag.korisnik_id"></select>
                 <span asp-validation-for="korisnik_id" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -39,14 +39,44 @@
                 <span asp-validation-for="status" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="statusZahtjeva" class="control-label"></label>
+                <select asp-for="statusZahtjeva" class="form-control"></select>
+                <span asp-validation-for="statusZahtjeva" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="popust" class="control-label"></label>
                 <input asp-for="popust" class="form-control" />
                 <span asp-validation-for="popust" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="vrijemeTrajanja" class="control-label"></label>
-                <input asp-for="vrijemeTrajanja" class="form-control" />
-                <span asp-validation-for="vrijemeTrajanja" class="text-danger"></span>
+                <label asp-for="cijena" class="control-label"></label>
+                <input asp-for="cijena" class="form-control" />
+                <span asp-validation-for="cijena" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ime" class="control-label"></label>
+                <input asp-for="ime" class="form-control" />
+                <span asp-validation-for="ime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prezime" class="control-label"></label>
+                <input asp-for="prezime" class="form-control" />
+                <span asp-validation-for="prezime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="email" class="control-label"></label>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="brojTelefona" class="control-label"></label>
+                <input asp-for="brojTelefona" class="form-control" />
+                <span asp-validation-for="brojTelefona" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="dodatniZahtjev" class="control-label"></label>
+                <input asp-for="dodatniZahtjev" class="form-control" />
+                <span asp-validation-for="dodatniZahtjev" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

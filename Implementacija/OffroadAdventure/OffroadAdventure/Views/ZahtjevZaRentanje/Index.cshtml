@@ -13,9 +13,6 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.korisnik_id)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.datumOd)
             </th>
             <th>
@@ -28,10 +25,31 @@
                 @Html.DisplayNameFor(model => model.status)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.statusZahtjeva)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.popust)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.vrijemeTrajanja)
+                @Html.DisplayNameFor(model => model.cijena)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.prezime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.brojTelefona)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dodatniZahtjev)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User)
             </th>
             <th></th>
         </tr>
@@ -39,9 +57,6 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.korisnik_id)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.datumOd)
             </td>
@@ -55,10 +70,31 @@
                 @Html.DisplayFor(modelItem => item.status)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.statusZahtjeva)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.popust)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.vrijemeTrajanja)
+                @Html.DisplayFor(modelItem => item.cijena)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prezime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.brojTelefona)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dodatniZahtjev)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.Id)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |

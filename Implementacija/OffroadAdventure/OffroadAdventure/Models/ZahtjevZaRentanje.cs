@@ -23,8 +23,17 @@ namespace OffroadAdventure.Models
         public StatusZahtjeva status { get; set; }
         [EnumDataType(typeof(StatusZahtjeva))] public StatusZahtjeva statusZahtjeva { get; set; }
         public double popust { get; set; }
-        public double vrijemeTrajanja { get; set; }
 
+        public double cijena { get; set; }
+        public string ime { get; set; }
+
+        public string prezime { get; set; } 
+        
+        public string email { get; set; }   
+
+        public string brojTelefona { get; set; }    
+
+        public string dodatniZahtjev {  get; set; } 
         public ZahtjevZaRentanje() { }
 
         public User User { get; set; }  

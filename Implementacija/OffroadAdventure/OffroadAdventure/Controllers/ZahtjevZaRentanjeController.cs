@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,24 +9,23 @@ using OffroadAdventure.Models;
 
 namespace OffroadAdventure.Controllers
 {
-    public class ZahtjevZaRentanjesController : Controller
+    public class ZahtjevZaRentanjeController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public ZahtjevZaRentanjesController(ApplicationDbContext context)
+        public ZahtjevZaRentanjeController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: ZahtjevZaRentanjes
-        [Authorize(Roles = "Administrator,Zaposlenik")]
+        // GET: ZahtjevZaRentanje
         public async Task<IActionResult> Index()
         {
-            return View(await _context.ZahtjevZaRentanje.ToListAsync());
+            var applicationDbContext = _context.ZahtjevZaRentanje.Include(z => z.User);
+            return View(await applicationDbContext.ToListAsync());
         }
 
-        // GET: ZahtjevZaRentanjes/Details/5
-        [Authorize(Roles = "Administrator,Zaposlenik")]
+        // GET: ZahtjevZaRentanje/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -36,6 +34,7 @@ namespace OffroadAdventure.Controllers
             }
 
             var zahtjevZaRentanje = await _context.ZahtjevZaRentanje
+                .Include(z => z.User)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (zahtjevZaRentanje == null)
             {
@@ -45,19 +44,19 @@ namespace OffroadAdventure.Controllers
             return View(zahtjevZaRentanje);
         }
 
-        // GET: ZahtjevZaRentanjes/Create
-        [Authorize(Roles = "Administrator,Zaposlenik")]
+        // GET: ZahtjevZaRentanje/Create
         public IActionResult Create()
         {
+            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id");
             return View();
         }
 
-        // POST: ZahtjevZaRentanjes/Create
+        // POST: ZahtjevZaRentanje/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,korisnik_id,datumOd,datumDo,brojVozila,status,popust,vrijemeTrajanja")] ZahtjevZaRentanje zahtjevZaRentanje)
+        public async Task<IActionResult> Create([Bind("id,korisnik_id,datumOd,datumDo,brojVozila,status,statusZahtjeva,popust,cijena,ime,prezime,email,brojTelefona,dodatniZahtjev")] ZahtjevZaRentanje zahtjevZaRentanje)
         {
             if (ModelState.IsValid)
             {
@@ -65,11 +64,11 @@ namespace OffroadAdventure.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjevZaRentanje.korisnik_id);
             return View(zahtjevZaRentanje);
         }
 
-        // GET: ZahtjevZaRentanjes/Edit/5
-        [Authorize(Roles = "Administrator,Zaposlenik")]
+        // GET: ZahtjevZaRentanje/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -82,15 +81,16 @@ namespace OffroadAdventure.Controllers
             {
                 return NotFound();
             }
+            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjevZaRentanje.korisnik_id);
             return View(zahtjevZaRentanje);
         }
 
-        // POST: ZahtjevZaRentanjes/Edit/5
+        // POST: ZahtjevZaRentanje/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,korisnik_id,datumOd,datumDo,brojVozila,status,popust,vrijemeTrajanja")] ZahtjevZaRentanje zahtjevZaRentanje)
+        public async Task<IActionResult> Edit(int id, [Bind("id,korisnik_id,datumOd,datumDo,brojVozila,status,statusZahtjeva,popust,cijena,ime,prezime,email,brojTelefona,dodatniZahtjev")] ZahtjevZaRentanje zahtjevZaRentanje)
         {
             if (id != zahtjevZaRentanje.id)
             {
@@ -117,10 +117,11 @@ namespace OffroadAdventure.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjevZaRentanje.korisnik_id);
             return View(zahtjevZaRentanje);
         }
 
-        // GET: ZahtjevZaRentanjes/Delete/5
+        // GET: ZahtjevZaRentanje/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -129,6 +130,7 @@ namespace OffroadAdventure.Controllers
             }
 
             var zahtjevZaRentanje = await _context.ZahtjevZaRentanje
+                .Include(z => z.User)
                 .FirstOrDefaultAsync(m => m.id == id);
             if (zahtjevZaRentanje == null)
             {
@@ -138,7 +140,7 @@ namespace OffroadAdventure.Controllers
             return View(zahtjevZaRentanje);
         }
 
-        // POST: ZahtjevZaRentanjes/Delete/5
+        // POST: ZahtjevZaRentanje/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
