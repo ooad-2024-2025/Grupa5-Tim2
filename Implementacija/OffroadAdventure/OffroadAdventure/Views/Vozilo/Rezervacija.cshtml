@@ -1,12 +1,16 @@
-﻿@{
+﻿@model OffroadAdventure.Models.ZahtjevZaRentanje
+
+@{
     ViewData["Title"] = "Rezervacija";
+    var brojVozila = (ViewBag.OdabranaVozila as List<OffroadAdventure.Models.Vozilo>)?.Count ?? 0;
+    var cijenaPoDanu = (ViewBag.OdabranaVozila as List<OffroadAdventure.Models.Vozilo>)?.Sum(v => v.cijenaPoDanu);
 }
 
 <div class="rezervacija-wrapper">
     <div class="forma-strana">
         <h2>Rezervacija</h2>
 
-        <form>
+        <form asp-controller="ZahtjevZaRentanje" asp-action="Create" method="post">
             <div class="rezervacija-odabrana-vozila">
                 <label>Odabrana vozila:</label>
                 <ul>
@@ -18,37 +22,56 @@
                 </ul>
             </div>
 
-
             <div class="form-row">
-                <input type="text" placeholder="Ime" />
-                <input type="text" placeholder="Prezime" />
+                <input asp-for="ime" placeholder="Ime" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}( [A-ZČĆŽŠĐa-zčćžšđ]+)*$" title="Ime mora sadržavati samo slova i može imati razmak" required />
+                <input asp-for="prezime" placeholder="Prezime" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}( [A-ZČĆŽŠĐa-zčćžšđ]+)*$" title="Prezime mora sadržavati samo slova i može imati razmak" required />
             </div>
 
             <div class="form-row">
-                <input type="text" placeholder="Broj telefona" />
-                <input type="email" placeholder="Email adresa" />
+                <input asp-for="brojTelefona" placeholder="Broj telefona" pattern="[0-9]+" title="Broj telefona mora sadržavati samo brojeve" required />
+                <input asp-for="email" placeholder="Email adresa" type="email" required />
             </div>
 
             <div class="form-row">
-                <input type="date" />
-                <input type="time" />
-                <input type="text" placeholder="Broj vozila" />
+                <div style="display: flex; flex-direction: column; flex: 1;">
+                    <label asp-for="datumOd">Datum od:</label>
+                    <input asp-for="datumOd" type="date" />
+                </div>
+
+                <div style="display: flex; flex-direction: column; flex: 1;">
+                    <label asp-for="datumDo">Datum do:</label>
+                    <input asp-for="datumDo" type="date" />
+                </div>
+
+                <div style="display: flex; flex-direction: column; flex: 1;">
+                    <label for="brojVozila" style="visibility: hidden;">Nevidljiv label</label>
+                    <input type="text" id="brojVozila" value="Broj vozila: @brojVozila" disabled />
+                    <input type="hidden" asp-for="brojVozila" value="@brojVozila" />
+                </div>
             </div>
 
-            <textarea placeholder="Dodatni zahtjevi"></textarea>
+            <textarea asp-for="dodatniZahtjev" placeholder="Dodatni zahtjevi"></textarea>
+            <input type="hidden" asp-for="popust" />
+            <input type="hidden" asp-for="cijena" />
 
             <div class="dugmici">
-                <button type="button">Plati pri preuzimanju</button>
+                <button type="submit" name="akcija" value="gotovina">Plati pri preuzimanju</button>
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <button type="button" onclick="location.href='/Home/KarticnoPlacanje'">Plati karticom</button>
+                    <button type="submit" name="akcija" value="kartica" >Plati karticom</button>
                 }
             </div>
-
+            @if (TempData["poruka"] != null)
+            {
+                <div class="poruka-uspjesnosti">
+                    @TempData["poruka"]
+                </div>
+            }
 
             <div class="cijena-info">
-                <span>Popust: 0%</span>
-                <span>Cijena 0,00 KM</span>
+                <span id="popust-info">Popust: @ViewBag.Popust %</span>
+                <span id="cijena-bez-info">Cijena bez popusta: @ViewBag.CijenaBez KM</span>
+                <span id="cijena-sa-info">Cijena sa popustom: @ViewBag.CijenaSa KM</span>
             </div>
         </form>
     </div>
@@ -62,3 +85,36 @@
         <p>Forma je informativnog sadržaja – neophodno je napraviti telefonsku potvrdu prije datuma i vremena rezervacije.</p>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+        const datumOdInput = document.getElementById('datumOd');
+        const datumDoInput = document.getElementById('datumDo');
+        const popustSpan = document.getElementById('popust-info');
+        const cijenaBezSpan = document.getElementById('cijena-bez-info');
+        const cijenaSaSpan = document.getElementById('cijena-sa-info');
+
+        const brojVozila = @brojVozila;
+        const cijenaPoDanu = @cijenaPoDanu;
+
+        function izracunaj() {
+            const od = new Date(datumOdInput.value);
+            const ddo = new Date(datumDoInput.value);
+            if (isNaN(od) || isNaN(ddo) || od > ddo) return;
+
+            const brojDana = (ddo - od) / (1000 * 60 * 60 * 24) + 1;
+            const osnovnaCijena = cijenaPoDanu * brojDana;
+            const popustProcenat = Math.min((Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2), 50);
+            const cijenaSa = osnovnaCijena * (1 - popustProcenat / 100);
+
+            popustSpan.innerText = `Popust: ${popustProcenat}%`;
+            cijenaBezSpan.innerText = `Cijena bez popusta: ${osnovnaCijena.toFixed(2)} KM`;
+            cijenaSaSpan.innerText = `Cijena sa popustom: ${cijenaSa.toFixed(2)} KM`;
+            document.querySelector('[name="popust"]').value = popustProcenat;
+            document.querySelector('[name="cijena"]').value = cijenaSa.toFixed(2);
+        }
+
+        datumOdInput.addEventListener('change', izracunaj);
+        datumDoInput.addEventListener('change', izracunaj);
+    </script>
+}

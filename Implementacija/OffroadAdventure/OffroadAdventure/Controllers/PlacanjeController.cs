@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OffroadAdventure.Models;
-using Microsoft.AspNetCore.Authorization;
+using OffroadAdventure.Models.Enums;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace OffroadAdventure.Controllers
 {
@@ -155,7 +156,33 @@ namespace OffroadAdventure.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> platiKarticom(int zahtjevId)
+        {
+            var placanje = _context.Placanje.FirstOrDefault(p => p.zahtjevZaRentanjeId == zahtjevId);
+            if (placanje == null)
+                return NotFound();
 
+            placanje.nacinPlacanja = NacinPlacanja.KARTICA;
+            placanje.statusPlacanja = StatusPlacanja.PLACENO;
+            placanje.datumPlacanja = DateTime.Now;
+            placanje.status = StatusPlacanja.PLACENO;
+
+            _context.SaveChanges();
+            TempData["poruka"] = $"Zahtjev je uspješno kreiran i uplata je izvršena! Očekujte obavještenje uskoro";
+            return RedirectToAction("Rezervacija", "Vozilo", new { id = zahtjevId });
+        }
+        
+        [HttpGet]
+        public StatusPlacanja dajStatusPlacanja(int id)
+        {
+            var placanje = _context.Placanje.FirstOrDefault(p => p.zahtjevZaRentanjeId == id);
+            if (placanje == null) NotFound();
+
+            return placanje.statusPlacanja;
+        }
         private bool PlacanjeExists(int id)
         {
             return _context.Placanje.Any(e => e.Id == id);
