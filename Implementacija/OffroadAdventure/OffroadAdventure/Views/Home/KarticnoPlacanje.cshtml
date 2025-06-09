@@ -5,31 +5,33 @@
 <div class="kartica-wrapper">
     <h2>Kartično plaćanje</h2>
 
-    <form class="kartica-form">
+    <form class="kartica-form" asp-controller="Placanje" asp-action="platiKarticom" method="post">
+        @Html.AntiForgeryToken()
         <div class="kartica-row">
             <label>Ime i prezime</label>
-            <input type="text" placeholder="Placeholder" />
+            <input type="text" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}( [A-ZČĆŽŠĐa-zčćžšđ]{2,})+$" title="Ime i prezime mora sadržavati bar 2 riječi od kojih svaka mora imati bar 2 slova" required/>
         </div>
 
         <div class="kartica-row">
             <label>Broj kartice</label>
-            <input type="text" placeholder="Placeholder" />
+            <input type="text" pattern="^(?:\d{16}|\d{4}(?: \d{4}){3}|\d{4}(?:-\d{4}){3})$" title="Unesite validan broj kartice (16 cifara)" required />
         </div>
 
         <div class="kartica-row">
             <label>Datum isteka</label>
             <div class="kartica-datum">
-                <input type="text" placeholder="Placeholder" />
+                <input type="text" pattern="^(0[1-9]|1[0-2])$" title="Unesite mjesec (01-12)" required />
                 <span>/</span>
-                <input type="text" placeholder="Placeholder" />
+                <input type="text" pattern="^([2-9][0-9])$" title="Unesite zadnje dvije cifre godine (npr. 25 za 2025)" required />
             </div>
         </div>
 
         <div class="kartica-row">
             <label>CVV</label>
-            <input type="text" placeholder="Placeholder" />
+            <input type="text" pattern="^\d{3,4}$" title="Unesite 3 ili 4 cifre" required />
         </div>
 
         <button type="submit" class="kartica-dugme">Plati</button>
+        <input type="hidden" name="zahtjevId" value="@ViewBag.ZahtjevId" />
     </form>
 </div>
