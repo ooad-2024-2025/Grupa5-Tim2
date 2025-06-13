@@ -1,13 +1,14 @@
 ﻿@model IEnumerable<OffroadAdventure.Models.Notifikacija>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista notifikaicja";
 }
 
-<h1>Index</h1>
+<h1>Lista notifikacija</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Dodaj novi</a>
+
 </p>
 <table class="table">
     <thead>
@@ -43,9 +44,12 @@
                 @Html.DisplayFor(modelItem => item.status)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                    <div class="btn-group" role="group">
+                        <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-warning">Uredi</a>
+                        <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info text-white">Detalji</a>
+                        <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger">Obriši</a>
+                    </div>
+
             </td>
         </tr>
 }
