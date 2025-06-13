@@ -47,27 +47,28 @@ namespace OffroadAdventure.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "Morate unijeti ime")]
             [Display(Name = "Ime")]
             [RegularExpression("^[a-zA-ZčćžšđČĆŽŠĐ]+$", ErrorMessage = "Dozvoljena su samo slova bez razmaka.")]
             public string Ime { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Morate unijeti prezime")]
             [Display(Name = "Prezime")]
             [RegularExpression("^[a-zA-ZčćžšđČĆŽŠĐ]+$", ErrorMessage = "Dozvoljena su samo slova bez razmaka.")]
             public string Prezime { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Morate unijeti email")]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "Morate unijeti lozinku")]
             [StringLength(100, ErrorMessage = "Lozinka mora imati najmanje {2}, a najviše {1} karaktera.", MinimumLength = 5)]
             [DataType(DataType.Password)]
             [Display(Name = "Lozinka")]
             public string Password { get; set; }
 
+            [Required(ErrorMessage = "Morate potvrditi lozinku")]
             [DataType(DataType.Password)]
             [Display(Name = "Potvrdi lozinku")]
             [Compare("Password", ErrorMessage = "Lozinka i potvrda lozinke se ne poklapaju.")]

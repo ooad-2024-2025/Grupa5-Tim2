@@ -57,12 +57,12 @@
                             <span class="text-white p-3">@user.Ime @user.Prezime</span>
                             <form asp-area="Identity" asp-page="/Account/Logout" method="post" class="m-0">
                                 @Html.AntiForgeryToken()
-                                <button type="submit" class="btn btn-outline-light">Logout</button>
+                                <button type="submit" class="btn btn-outline-light">Odjava</button>
                             </form>
                         }
                         else
                         {
-                            <a class="btn btn-login me-2" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                            <a class="btn btn-login me-2" asp-area="Identity" asp-page="/Account/Login">Prijava</a>
                             <a class="btn btn-register" asp-area="Identity" asp-page="/Account/Register">Registracija</a>
                         }
                     </div>
