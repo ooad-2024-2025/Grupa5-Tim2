@@ -200,6 +200,57 @@ namespace OffroadAdventure.Controllers
         {
             return _context.ZahtjevZaRentanje.Any(e => e.id == id);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Odobri(int id)
+        {
+            var zahtjev = await _context.ZahtjevZaRentanje.Include(z => z.User).FirstOrDefaultAsync(z => z.id == id);
+            if (zahtjev == null) return NotFound();
+
+            zahtjev.statusZahtjeva = StatusZahtjeva.ODOBREN;
+            _context.Update(zahtjev);
+
+            if (zahtjev.korisnik_id != null)
+            {
+                _context.Notifikacija.Add(new Notifikacija
+                {
+                    primalac_id = zahtjev.korisnik_id,
+                    tekst = "Vaš zahtjev za rentanje vozila je odobren.",
+                    datum = DateTime.Now,
+                    status = StatusNotifikacije.NEPROCITANA
+                });
+            }
+
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Odbij(int id)
+        {
+            var zahtjev = await _context.ZahtjevZaRentanje.Include(z => z.User).FirstOrDefaultAsync(z => z.id == id);
+            if (zahtjev == null) return NotFound();
+
+            zahtjev.statusZahtjeva = StatusZahtjeva.ODBIJEN;
+            _context.Update(zahtjev);
+
+            if (zahtjev.korisnik_id != null)
+            {
+                _context.Notifikacija.Add(new Notifikacija
+                {
+                    primalac_id = zahtjev.korisnik_id,
+                    tekst = "Nažalost, vaš zahtjev za rentanje vozila je odbijen.",
+                    datum = DateTime.Now,
+                    status = StatusNotifikacije.NEPROCITANA
+                });
+            }
+
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
 
         
     }

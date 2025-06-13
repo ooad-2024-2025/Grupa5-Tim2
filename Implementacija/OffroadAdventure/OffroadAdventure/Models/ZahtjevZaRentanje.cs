@@ -11,7 +11,7 @@ namespace OffroadAdventure.Models
         public int id { get; set; }
         
         [ForeignKey("User")]
-        public string korisnik_id { get; set; }
+        public string? korisnik_id { get; set; }
         [Required(ErrorMessage = "Polje mora biti popunjeno")]
         [FutureDate(ErrorMessage = "Datum početka mora biti u budućnosti ili danas.")]
         public DateTime datumOd { get; set; }
@@ -19,8 +19,6 @@ namespace OffroadAdventure.Models
         [FutureDate(ErrorMessage = "Datum početka mora biti u budućnosti ili danas.")]
         public DateTime datumDo { get; set; }
         public int brojVozila { get; set; }
-
-        public StatusZahtjeva status { get; set; }
         [EnumDataType(typeof(StatusZahtjeva))] public StatusZahtjeva statusZahtjeva { get; set; }
         public double popust { get; set; }
 

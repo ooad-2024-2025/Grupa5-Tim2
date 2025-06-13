@@ -422,7 +422,6 @@ namespace OffroadAdventure.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("korisnik_id")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("popust")
@@ -431,9 +430,6 @@ namespace OffroadAdventure.Data.Migrations
                     b.Property<string>("prezime")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("status")
-                        .HasColumnType("int");
 
                     b.Property<int>("statusZahtjeva")
                         .HasColumnType("int");
@@ -550,9 +546,7 @@ namespace OffroadAdventure.Data.Migrations
                 {
                     b.HasOne("OffroadAdventure.Models.User", "User")
                         .WithMany()
-                        .HasForeignKey("korisnik_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("korisnik_id");
 
                     b.Navigation("User");
                 });

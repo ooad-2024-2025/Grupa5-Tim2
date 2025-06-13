@@ -117,4 +117,15 @@
         datumOdInput.addEventListener('change', izracunaj);
         datumDoInput.addEventListener('change', izracunaj);
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const brojVozila = @brojVozila;
+
+            if (brojVozila === 0) {
+                alert("Ne možete rezervisati nijedno vozilo, molimo vratite se na prethodni ekran.");
+                document.querySelector("form").style.display = "none";
+            }
+        });
+    </script>
+
 }

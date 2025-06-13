@@ -82,7 +82,25 @@
                 <p>Napravite korisnički račun.<br />Ostvarite pravo na popuste!</p>
                 <a href="/Home/SaznajteVise" class="saznaj-vise">Saznajte više</a>
                 <button type="submit" class="btn-rezervisi">Rezerviši vozilo</button>
+                <div id="poruka-greske" style="color: red; margin-top: 10px; display: none; font-size:0.9rem; font-weight:bold"></div>
             </div>
         </div>
     </form>
 </div>
+@section Scripts {
+    <script>
+        document.querySelector("form[action='/Vozilo/Rezervacija']").addEventListener("submit", function (e) {
+            const cekirani = document.querySelectorAll("input.vozilo-checkbox:checked");
+            const porukaDiv = document.getElementById("poruka-greske");
+
+            if (cekirani.length === 0) {
+                e.preventDefault();
+                porukaDiv.innerText = "Ne možete rezervisati nijedno vozilo. Molimo označite barem jedno vozilo.";
+                porukaDiv.style.display = "block";
+            } else {
+                porukaDiv.style.display = "none";
+            }
+        });
+    </script>
+}
+
