@@ -43,6 +43,12 @@
                                 <a class="nav-link nav-link-custom" asp-controller="ZahtjevZaRentanje" asp-action="Index">Upravljaj Zahtjevima</a>
                             </li>
                         }
+                        @if (user != null && await UserManager.IsInRoleAsync(user, "Administrator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-custom" asp-controller="Komentar" asp-action="Index">Upravljaj Komentarima</a>
+                            </li>
+                        }
                     </ul>
 
                     <div class="d-flex align-items-center">

@@ -1,0 +1,157 @@
+﻿@model List<OffroadAdventure.Models.Komentar>
+@using System.Security.Claims
+@{
+    ViewData["Title"] = "Recenzije";
+    var sort = ViewBag.Sort as string ?? "";
+}
+
+@if (TempData["Poruka"] != null)
+{
+    <div class="alert alert-success" style="margin-bottom: 15px;">
+        @TempData["Poruka"]
+    </div>
+}
+
+<div class="recenzije-wrapper">
+    <div class="recenzije-lijeva">
+        <div class="recenzije-header">
+            <h2>Recenzije</h2>
+
+            <div class="sort-ocjena">
+                @{
+                    string poredak = ViewBag.Poredak as string ?? "";
+                    var opcije = new Dictionary<string, string>
+                    {
+                        { "desc", "Po višoj ocjeni" },
+                        { "asc", "Po nižoj ocjeni" }
+                    };
+                }
+
+                <select onchange="location = this.value;">
+                    @foreach (var opcija in opcije)
+                    {
+                        var url = $"/Komentar/Recenzije?poredak={opcija.Key}";
+                        var selected = opcija.Key == poredak ? "selected=\"selected\"" : "";
+                        @:<option value="@url" @selected>@opcija.Value</option>
+                    }
+                </select>
+            </div>
+
+            <span class="prosjek">Prosječna ocjena: @(ViewBag.ProsjecnaOcjena != null ? ((double)ViewBag.ProsjecnaOcjena).ToString("0.0") : "N/A") / 5.0</span>
+        </div>
+
+        <div class="recenzije-lista">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var komentar in Model.Where(k => k.komentarId == 0))
+                {
+                    <div class="recenzija-kartica">
+                        <p><strong>Ocjena:</strong> @komentar.ocjena</p>
+                        <p><strong>Korisnik:</strong> @(komentar.user != null ? komentar.user.Ime + " " + komentar.user.Prezime : "Nepoznat")</p>
+                        <p> @komentar.tekst</p>
+                        <p style="font-size: 0.9em; color: gray;"><em>@komentar.datum.ToString("dd.MM.yyyy. HH:mm")</em></p>
+
+                        <form asp-controller="Komentar" asp-action="Odgovori" method="post">
+                            <input type="hidden" name="komentarId" value="@komentar.Id" />
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                <input type="text" name="tekstOdgovora" class="odgovor-input" placeholder="Ostavite odgovor"
+                                       onkeydown="if (event.key === 'Enter') { this.form.submit(); return false; }" />
+                                <button type="submit" class="btn btn-sm btn-primary" style="padding: 4px 10px;">➤</button>
+                            </div>
+                        </form>
+
+                        @{
+                            var odgovori = Model.Where(k => k.komentarId == komentar.Id).ToList();
+                        }
+
+                        @if (odgovori.Any())
+                        {
+                            var odgovorContainerId = $"odgovori-{komentar.Id}";
+                            var toggleId = $"toggle-{komentar.Id}";
+                            <button type="button" onclick="toggleOdgovori('@odgovorContainerId', '@toggleId')" class="btn btn-sm btn-light" style="margin-top: 10px;">
+                                <span id="@toggleId">Prikaži odgovore ( @odgovori.Count )</span>
+                            </button>
+
+                            <div id="@odgovorContainerId" style="display: none; margin-top: 10px; padding-left: 15px; border-left: 2px solid #ddd;">
+                                @foreach (var odgovor in odgovori)
+                                {
+                                    <div class="recenzija-kartica" style="background-color: #f9f9f9;">
+                                        <p><strong>@(odgovor.user?.Ime  + " " + odgovor.user?.Prezime ?? "Nepoznat"):</strong> @odgovor.tekst</p>
+                                        <p style="font-size: 0.8em; color: gray;"><em>@odgovor.datum.ToString("dd.MM.yyyy. HH:mm")</em></p>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                }
+            }
+            else
+            {
+                <p style="background: #f4f4f4; padding: 10px;">Nema komentara.</p>
+            }
+        </div>
+    </div>
+
+    <div class="recenzije-desna">
+        <form asp-controller="Komentar" asp-action="Dodaj" method="post">
+            <h3>Ocijeni uslugu</h3>
+
+            <div class="zvjezdice-ocjena">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <span class="star" data-value="@i">&#9733;</span>
+                }
+            </div>
+
+            <input type="hidden" id="ocjenaInput" name="Ocjena" value="0" />
+            <textarea name="Tekst" placeholder="Ostavi komentar" class="komentar-input" rows="3"></textarea>
+            <button type="submit" class="btn-objavi">Objavi</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const zvjezdice = document.querySelectorAll('.star');
+        const ocjenaInput = document.getElementById('ocjenaInput');
+
+        zvjezdice.forEach(star => {
+            star.addEventListener('mouseover', () => {
+                const val = star.getAttribute('data-value');
+                highlightStars(val);
+            });
+
+            star.addEventListener('click', () => {
+                const val = star.getAttribute('data-value');
+                ocjenaInput.value = val;
+            });
+
+            star.addEventListener('mouseout', () => {
+                highlightStars(ocjenaInput.value);
+            });
+        });
+
+        function highlightStars(value) {
+            zvjezdice.forEach(star => {
+                if (star.getAttribute('data-value') <= value) {
+                    star.classList.add('selected');
+                    star.style.color = 'gold';
+                } else {
+                    star.classList.remove('selected');
+                    star.style.color = 'gray';
+                }
+            });
+        }
+
+        function toggleOdgovori(containerId, toggleId) {
+            const container = document.getElementById(containerId);
+            const toggle = document.getElementById(toggleId);
+            const isVisible = container.style.display === 'block';
+
+            container.style.display = isVisible ? 'none' : 'block';
+            toggle.innerText = isVisible ? 'Prikaži odgovore' : 'Sakrij odgovore';
+        }
+
+        highlightStars(0);
+    </script>
+}

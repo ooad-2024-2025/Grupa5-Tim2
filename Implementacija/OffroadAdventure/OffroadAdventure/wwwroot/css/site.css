@@ -445,12 +445,14 @@ textarea {
 .recenzije-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 80px 40px;
-    gap: 3rem;
+    padding: 60px 40px;
+    gap: 40px;
 }
 
 .recenzije-lijeva {
     flex: 3;
+    display: flex;
+    flex-direction: column;
 }
 
 .recenzije-header {
@@ -460,18 +462,15 @@ textarea {
     margin-bottom: 20px;
 }
 
-.sort-ocjena {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.sort-ocjena select {
+    margin-left: 400px;
+    padding: 6px 10px;
+    font-size: 14px;
 }
-
-    .sort-ocjena select {
-        padding: 6px 10px;
-    }
 
 .prosjek {
     font-weight: bold;
+    font-size: 16px;
 }
 
 .recenzije-lista {
@@ -482,6 +481,7 @@ textarea {
     gap: 15px;
     max-height: 500px;
     overflow-y: auto;
+    border-radius: 5px;
 }
 
 .recenzija-kartica {
@@ -490,52 +490,48 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.korisnik {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.avatar {
-    width: 50px;
-    height: 50px;
-}
-
-.zvjezdice {
-    font-size: 1.2rem;
-    color: black;
+    border-radius: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .odgovor-input {
-    padding: 6px 10px;
+    padding: 8px 10px;
     width: 100%;
     border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .recenzije-desna {
-    margin-top:200px;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding-top: 40px;
 }
 
     .recenzije-desna h3 {
+        display:flex;
+        justify-content:center;
         font-size: 1.2rem;
         font-weight: bold;
     }
 
 .zvjezdice-ocjena {
+    justify-content: center;
     font-size: 1.4rem;
     cursor: pointer;
+    display: flex;
+    gap: 5px;
 }
 
 .komentar-input {
     width: 100%;
     padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .btn-objavi {
@@ -543,8 +539,10 @@ textarea {
     color: white;
     padding: 8px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
+
 .star {
     font-size: 1.8rem;
     cursor: pointer;
@@ -555,6 +553,7 @@ textarea {
     .star.selected {
         color: #f5b301;
     }
+
     /*Elementi za izgled prozora Notifikacija*/
 .delete-btn {
     background: none;
