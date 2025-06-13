@@ -23,7 +23,8 @@
                 { "", "Vrsta vozila" },
                 { "ATV", "ATV" },
                 { "BUGGY", "Buggy" },
-                { "UTV", "UTV" }
+                { "UTV", "UTV" },
+                {"Motor","Motor"}
             };
         }
 
@@ -63,8 +64,7 @@
                                 </div>
                                 <div class="vozilo-info">
                                     <strong>@vozilo.model</strong>
-                                    <p>Tip: @vozilo.tip</p>
-                                    <p>@vozilo.cijenaPoDanu KM/dan</p>
+                                    <p>Vrsta vozila: @vozilo.tip</p>
                                     <p>Status: @(vozilo.dostupno ? "Dostupno" : "Nije dostupno")</p>
                                 </div>
                                 <div class="vozilo-cijena">

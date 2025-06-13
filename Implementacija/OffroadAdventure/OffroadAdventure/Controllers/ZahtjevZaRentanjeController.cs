@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using OffroadAdventure.Data.Migrations;
 using OffroadAdventure.Models;
 using OffroadAdventure.Models.Enums;
-    using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -71,13 +71,36 @@ namespace OffroadAdventure.Controllers
 
             _context.Placanje.Add(placanje);
             await _context.SaveChangesAsync();
+
             if (akcija == "kartica")
             {
                 ViewBag.ZahtjevId = z.id;
                 return View("~/Views/Home/KarticnoPlacanje.cshtml");
             }
+            var uloge = new[] { "Administrator", "Zaposlenik" };
+
+            var korisnici = await _context.Users
+                .Where(u => _context.UserRoles
+                    .Any(ur => ur.UserId == u.Id &&
+                               _context.Roles
+                                   .Any(r => r.Id == ur.RoleId && uloge.Contains(r.Name))))
+                .ToListAsync();
+
+            foreach (var k in korisnici)
+            {
+                _context.Notifikacija.Add(new Notifikacija
+                {
+                    primalac_id = k.Id,
+                    tekst = $"Korisnik {z.ime} {z.prezime} je izvršio rezervaciju za rentanje vozila.",
+                    datum = DateTime.Now,
+                    status = StatusNotifikacije.NEPROCITANA
+                });
+            }
+
+            await _context.SaveChangesAsync();
+
             TempData["poruka"] = $"Zahtjev je uspješno kreiran! Očekujte obavještenje uskoro";
-            return RedirectToAction("Rezervacija","Vozilo");
+            return RedirectToAction("Rezervacija", "Vozilo");
         }
 
         public async Task<IActionResult> Edit(int? id)
@@ -252,7 +275,7 @@ namespace OffroadAdventure.Controllers
             return RedirectToAction("Index");
         }
 
-        
+
     }
 }
 

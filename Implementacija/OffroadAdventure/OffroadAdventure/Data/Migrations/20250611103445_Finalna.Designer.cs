@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace OffroadAdventure.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250611103445_Finalna")]
+    partial class Finalna
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -423,6 +426,7 @@ namespace OffroadAdventure.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("korisnik_id")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("popust")
@@ -431,6 +435,9 @@ namespace OffroadAdventure.Data.Migrations
                     b.Property<string>("prezime")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
 
                     b.Property<int>("statusZahtjeva")
                         .HasColumnType("int");
@@ -549,7 +556,9 @@ namespace OffroadAdventure.Data.Migrations
                 {
                     b.HasOne("OffroadAdventure.Models.User", "User")
                         .WithMany()
-                        .HasForeignKey("korisnik_id");
+                        .HasForeignKey("korisnik_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });

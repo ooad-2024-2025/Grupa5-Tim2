@@ -156,7 +156,7 @@ namespace OffroadAdventure.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> platiKarticom(int zahtjevId)
@@ -170,11 +170,38 @@ namespace OffroadAdventure.Controllers
             placanje.datumPlacanja = DateTime.Now;
             placanje.status = StatusPlacanja.PLACENO;
 
-            _context.SaveChanges();
+
+            var zahtjev = await _context.ZahtjevZaRentanje.FindAsync(zahtjevId);
+            if (zahtjev == null)
+                return NotFound();
+
+            var uloge = new[] { "Administrator", "Zaposlenik" };
+
+            var korisnici = await _context.Users
+                .Where(u => _context.UserRoles
+                    .Any(ur => ur.UserId == u.Id &&
+                               _context.Roles
+                                   .Any(r => r.Id == ur.RoleId && uloge.Contains(r.Name))))
+                .ToListAsync();
+
+            foreach (var k in korisnici)
+            {
+                _context.Notifikacija.Add(new Notifikacija
+                {
+                    primalac_id = k.Id,
+                    tekst = $"Korisnik {zahtjev.ime} {zahtjev.prezime} je izvršio kartično plaćanje za rezervaciju vozila.",
+                    datum = DateTime.Now,
+                    status = StatusNotifikacije.NEPROCITANA
+                });
+            }
+
+            await _context.SaveChangesAsync();
+
             TempData["poruka"] = $"Zahtjev je uspješno kreiran i uplata je izvršena! Očekujte obavještenje uskoro";
             return RedirectToAction("Rezervacija", "Vozilo", new { id = zahtjevId });
         }
-        
+
+
         [HttpGet]
         public StatusPlacanja dajStatusPlacanja(int id)
         {

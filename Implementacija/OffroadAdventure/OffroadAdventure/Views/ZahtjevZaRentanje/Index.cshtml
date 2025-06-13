@@ -7,7 +7,7 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Napravi novi</a>
 </p>
 <table class="table">
     <thead>
@@ -91,9 +91,19 @@
                 @Html.DisplayFor(modelItem => item.User.Id)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary" style="width: 70px;" >Izmjeni</a>
+                    <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info text-white" style="width: 70px;">Detalji</a>
+                    <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger" style="width: 70px;">Obriši</a>
+                    <form asp-action="Odobri" method="post" style="display:inline;" style="width: 70px;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@item.id" />
+                        <button type="submit" class="btn btn-success btn-sm" style="width: 70px;">Odobri</button>
+                    </form>
+                    <form asp-action="Odbij" method="post" style="display:inline;">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@item.id" />
+                        <button type="submit" class="btn btn-warning btn-sm" style="width: 70px;">Odbij</button>
+                    </form>
             </td>
         </tr>
 }

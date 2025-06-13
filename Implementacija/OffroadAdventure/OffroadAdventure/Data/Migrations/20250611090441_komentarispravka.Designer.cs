@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace OffroadAdventure.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250611090441_komentarispravka")]
+    partial class komentarispravka
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -168,7 +171,7 @@ namespace OffroadAdventure.Data.Migrations
 
                     b.Property<string>("autor_id")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("datum")
                         .HasColumnType("datetime2");
@@ -181,12 +184,14 @@ namespace OffroadAdventure.Data.Migrations
 
                     b.Property<string>("tekst")
                         .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("userId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("autor_id");
+                    b.HasIndex("userId");
 
                     b.ToTable("Komentar", (string)null);
                 });
@@ -423,6 +428,7 @@ namespace OffroadAdventure.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("korisnik_id")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<double>("popust")
@@ -431,6 +437,9 @@ namespace OffroadAdventure.Data.Migrations
                     b.Property<string>("prezime")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
 
                     b.Property<int>("statusZahtjeva")
                         .HasColumnType("int");
@@ -497,9 +506,7 @@ namespace OffroadAdventure.Data.Migrations
                 {
                     b.HasOne("OffroadAdventure.Models.User", "user")
                         .WithMany()
-                        .HasForeignKey("autor_id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("userId");
 
                     b.Navigation("user");
                 });
@@ -549,7 +556,9 @@ namespace OffroadAdventure.Data.Migrations
                 {
                     b.HasOne("OffroadAdventure.Models.User", "User")
                         .WithMany()
-                        .HasForeignKey("korisnik_id");
+                        .HasForeignKey("korisnik_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });

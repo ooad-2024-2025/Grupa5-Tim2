@@ -7,13 +7,16 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Napravi novi</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.autor_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.komentarId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.ocjena)
@@ -34,6 +37,9 @@
                 @Html.DisplayFor(modelItem => item.autor_id)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.komentarId)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.ocjena)
             </td>
             <td>
@@ -43,9 +49,9 @@
                 @Html.DisplayFor(modelItem => item.datum)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Izmjeni</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info text-white">Detalji</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Obriši</a>
             </td>
         </tr>
 }
