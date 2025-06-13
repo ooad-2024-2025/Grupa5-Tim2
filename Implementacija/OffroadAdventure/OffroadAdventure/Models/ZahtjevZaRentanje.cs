@@ -29,7 +29,8 @@ namespace OffroadAdventure.Models
         
         public string email { get; set; }   
 
-        public string brojTelefona { get; set; }    
+        public string brojTelefona { get; set; }
+        public ICollection<StavkaZahtjeva> Stavke { get; set; }
 
         public string dodatniZahtjev {  get; set; } 
         public ZahtjevZaRentanje() { }

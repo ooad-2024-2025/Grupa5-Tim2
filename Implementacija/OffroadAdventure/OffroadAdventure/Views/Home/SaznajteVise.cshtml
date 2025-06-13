@@ -16,5 +16,12 @@
 
     <p>Bez komplikacija, bez dodatnih zahtjeva – naš algoritam sve računa za tebe i automatski primjenjuje najpovoljniju cijenu.</p>
 
-    <a href="/Identity/Account/Register" class="btn-saznaj">Registrujte se sada!</a>
+    @if (!User.Identity.IsAuthenticated)
+    {
+        <a href="/Identity/Account/Register" class="btn-saznaj">Registrujte se sada!</a>
+    }
+    else
+    {
+        <p><strong>Drago nam je što već imate korisnički račun – uživajte u popustima!</strong></p>
+    }
 </div>

@@ -91,7 +91,7 @@
                 @Html.DisplayFor(modelItem => item.User.Id)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary" style="width: 70px;" >Izmjeni</a>
+                    <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary" style="width: 70px;">Izmjeni</a>
                     <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info text-white" style="width: 70px;">Detalji</a>
                     <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger" style="width: 70px;">Obriši</a>
                     <form asp-action="Odobri" method="post" style="display:inline;" style="width: 70px;">

@@ -23,29 +23,45 @@ namespace OffroadAdventure.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.ZahtjevZaRentanje.Include(z => z.User);
+            var applicationDbContext = _context.ZahtjevZaRentanje
+                .Include(z => z.User)
+                .Include(z => z.Stavke)
+                    .ThenInclude(s => s.Vozilo);
+
             return View(await applicationDbContext.ToListAsync());
         }
+
 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
+            var zahtjev = await _context.ZahtjevZaRentanje
+                .Include(z => z.User)
+                .Include(z => z.Stavke)
+                    .ThenInclude(s => s.Vozilo)
+                .FirstOrDefaultAsync(z => z.id == id);
 
-            var zahtjev = await _context.ZahtjevZaRentanje.Include(z => z.User).FirstOrDefaultAsync(z => z.id == id);
             if (zahtjev == null) return NotFound();
-
             return View(zahtjev);
         }
 
         public IActionResult Create()
         {
             ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id");
+            ViewBag.Statusi = Enum.GetValues(typeof(StatusZahtjeva))
+           .Cast<StatusZahtjeva>()
+           .Select(s => new SelectListItem
+           {
+               Text = s.ToString(),
+               Value = ((int)s).ToString()
+           }).ToList();
+            ViewBag.SvaVozila = _context.Vozilo.ToList();
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ZahtjevZaRentanje z, string akcija)
+        public async Task<IActionResult> Create(ZahtjevZaRentanje z, string akcija, List<int> vozilaId)
         {
             z.korisnik_id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ModelState.Remove(nameof(z.korisnik_id));
@@ -56,8 +72,22 @@ namespace OffroadAdventure.Controllers
                 z.dodatniZahtjev = "";
                 ModelState.Remove(nameof(z.dodatniZahtjev));
             }
+            var vozila = await _context.Vozilo.Where(v => vozilaId.Contains(v.id)).ToListAsync();
+            var (popustProcenat, cijenaSaPopustom) = IzracunajPopust(vozila, z.datumOd, z.datumDo);
+            z.popust = popustProcenat;
+            z.cijena = cijenaSaPopustom;
 
             _context.ZahtjevZaRentanje.Add(z);
+            await _context.SaveChangesAsync();
+            foreach (var vozilo in vozila)
+            {
+                var stavka = new StavkaZahtjeva
+                {
+                    ZahtjevZaRentanjeId = z.id,
+                    VoziloId = vozilo.id
+                };
+                _context.StavkaZahtjeva.Add(stavka);
+            }
             await _context.SaveChangesAsync();
 
             var placanje = new Placanje
@@ -116,6 +146,13 @@ namespace OffroadAdventure.Controllers
                 return NotFound();
             }
             ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjevZaRentanje.korisnik_id);
+            ViewBag.Statusi = Enum.GetValues(typeof(StatusZahtjeva))
+           .Cast<StatusZahtjeva>()
+           .Select(s => new SelectListItem
+           {
+               Text = s.ToString(),
+               Value = ((int)s).ToString()
+           }).ToList();
             return View(zahtjevZaRentanje);
         }
 
@@ -274,6 +311,18 @@ namespace OffroadAdventure.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+        private (double popust, double cijenaSaPopustom) IzracunajPopust(List<Vozilo> vozila, DateTime datumOd, DateTime datumDo)
+        {
+            int brojDana = (datumDo - datumOd).Days + 1;
+            double osnovnaCijena = vozila.Sum(v => v.cijenaPoDanu) * brojDana;
+
+            int brojVozila = vozila.Count;
+            double popustProcenat = Math.Min((Math.Max(brojVozila - 1, 0) * 5 + Math.Max(brojDana - 1, 0) * 2), 50);
+            double cijenaSa = osnovnaCijena * (1 - popustProcenat / 100);
+
+            return (popustProcenat, cijenaSa);
+        }
+
 
 
     }

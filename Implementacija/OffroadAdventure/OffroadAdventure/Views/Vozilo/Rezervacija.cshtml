@@ -35,12 +35,12 @@
             <div class="form-row">
                 <div style="display: flex; flex-direction: column; flex: 1;">
                     <label asp-for="datumOd">Datum od:</label>
-                    <input asp-for="datumOd" type="date" />
+                    <input asp-for="datumOd" type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" max="@DateTime.Now.AddYears(1).ToString("yyyy-MM-dd")" />
                 </div>
 
                 <div style="display: flex; flex-direction: column; flex: 1;">
                     <label asp-for="datumDo">Datum do:</label>
-                    <input asp-for="datumDo" type="date" />
+                    <input asp-for="datumDo" type="date" min="@DateTime.Now.ToString("yyyy-MM-dd")" max="@DateTime.Now.AddYears(1).ToString("yyyy-MM-dd")" />
                 </div>
 
                 <div style="display: flex; flex-direction: column; flex: 1;">
@@ -51,8 +51,6 @@
             </div>
 
             <textarea asp-for="dodatniZahtjev" placeholder="Dodatni zahtjevi"></textarea>
-            <input type="hidden" asp-for="popust" />
-            <input type="hidden" asp-for="cijena" />
 
             <div class="dugmici">
                 <button type="submit" name="akcija" value="gotovina">Plati pri preuzimanju</button>
@@ -85,7 +83,6 @@
         <p>Forma je informativnog sadržaja – neophodno je napraviti telefonsku potvrdu prije datuma i vremena rezervacije.</p>
     </div>
 </div>
-
 @section Scripts {
     <script>
         const datumOdInput = document.getElementById('datumOd');
@@ -97,7 +94,7 @@
         const brojVozila = @brojVozila;
         const cijenaPoDanu = @cijenaPoDanu;
 
-        function izracunaj() {
+        function izracunajZaPrikaz() {
             const od = new Date(datumOdInput.value);
             const ddo = new Date(datumDoInput.value);
             if (isNaN(od) || isNaN(ddo) || od > ddo) return;
@@ -107,25 +104,14 @@
             const popustProcenat = Math.min((Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2), 50);
             const cijenaSa = osnovnaCijena * (1 - popustProcenat / 100);
 
-            popustSpan.innerText = `Popust: ${popustProcenat}%`;
+            popustSpan.innerText = `Popust: ${popustProcenat.toFixed(0)}%`;
             cijenaBezSpan.innerText = `Cijena bez popusta: ${osnovnaCijena.toFixed(2)} KM`;
             cijenaSaSpan.innerText = `Cijena sa popustom: ${cijenaSa.toFixed(2)} KM`;
-            document.querySelector('[name="popust"]').value = popustProcenat;
-            document.querySelector('[name="cijena"]').value = cijenaSa.toFixed(2);
         }
 
-        datumOdInput.addEventListener('change', izracunaj);
-        datumDoInput.addEventListener('change', izracunaj);
+        datumOdInput.addEventListener('change', izracunajZaPrikaz);
+        datumDoInput.addEventListener('change', izracunajZaPrikaz);
     </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const brojVozila = @brojVozila;
-
-            if (brojVozila === 0) {
-                alert("Ne možete rezervisati nijedno vozilo, molimo vratite se na prethodni ekran.");
-                document.querySelector("form").style.display = "none";
-            }
-        });
-    </script>
+}
 
 }

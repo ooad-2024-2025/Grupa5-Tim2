@@ -10,6 +10,18 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
+        <div class="form-group">
+            <label>Odaberi vozila:</label>
+            @foreach (var vozilo in (List<OffroadAdventure.Models.Vozilo>)ViewBag.SvaVozila)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="vozilaId" value="@vozilo.id" id="vozilo_@vozilo.id" />
+                    <label class="form-check-label" for="vozilo_@vozilo.id">
+                        @vozilo.model (@vozilo.tip) - @vozilo.cijenaPoDanu KM/dan
+                    </label>
+                </div>
+            }
+        </div>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -33,7 +45,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="statusZahtjeva" class="control-label"></label>
-                <select asp-for="statusZahtjeva" class="form-control"></select>
+                <select asp-for="statusZahtjeva" class="form-control" asp-items="ViewBag.Statusi"></select>
                 <span asp-validation-for="statusZahtjeva" class="text-danger"></span>
             </div>
             <div class="form-group">
