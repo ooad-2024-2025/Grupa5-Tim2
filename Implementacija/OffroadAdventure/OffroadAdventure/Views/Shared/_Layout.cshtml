@@ -7,7 +7,8 @@
     var user = User.Identity.IsAuthenticated ? await UserManager.GetUserAsync(User) : null;
 }
 @{
-    var isEditZahtjev = Context.Request.Path.Value?.ToLower().Contains("/zahtjevzarentanje") ?? false;
+    var isEditZahtjev = Context.Request.Path.Value?.ToLower() is "/zahtjevzarentanje" or "/zahtjevzarentanje/";
+
 }
 
 <!DOCTYPE html>

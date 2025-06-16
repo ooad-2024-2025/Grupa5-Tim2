@@ -41,12 +41,55 @@
             </div>
         </form>
     </div>
+    <div class="col-md-6">
+        <h5>Upload sliku na Imgur</h5>
+        <p class="text-muted">Odaberite sliku sa svog računara i kliknite na dugme Dobavi URL </p>
+        <p class="text-muted">Dok čekate da vam se pojavi URL možete popuniti ostale podatke</p>
+        <p class="text-muted">Na kraju prekopirajte URL u odgovarajuće polje</p>
+        <form method="post" enctype="multipart/form-data" action="/Upload/Imgur" target="imgurIframe">
+            <div class="form-group">
+                <label for="image">Odaberi sliku:</label>
+                <input type="file" name="image" class="form-control" required />
+            </div>
+            <div class="form-group mt-2">
+                <button type="submit" class="btn btn-info">Dobavi URL</button>
+            </div>
+        </form>
+
+        <iframe name="imgurIframe" style="display:none;" onload="handleImgurResponse(this)"></iframe>
+
+        <div class="form-group mt-3">
+            <label>URL slike:</label>
+            <input type="text" id="imgurUrl" class="form-control" readonly />
+        </div>
+    </div>
 </div>
+
 
 <div>
     <a asp-action="Index" class="btn btn-secondary">Nazad na listu vozila</a>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        function handleImgurResponse(iframe) {
+            try {
+                const responseText = iframe.contentDocument.body.innerText;
+                const data = JSON.parse(responseText);
+                if (data.success) {
+                    document.getElementById("imgurUrl").value = data.data.link;
+                } else {
+                    alert("Greška pri uploadu slike.");
+                }
+            } catch (e) {
+                console.error("Parsing greška:", e);
+            }
+        }
+    </script>
+
 }
+

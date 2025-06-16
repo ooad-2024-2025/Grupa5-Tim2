@@ -113,7 +113,12 @@
             function izracunajZaPrikaz() {
                 const od = new Date(datumOdInput.value);
                 const ddo = new Date(datumDoInput.value);
-                if (isNaN(od) || isNaN(ddo) || od > ddo) return;
+                    if (isNaN(od) || isNaN(ddo)) return;
+            if (od > ddo) {
+                alert("Datum od ne može biti nakon datuma do.");
+                return;
+            }
+
 
                 const brojDana = (ddo - od) / (1000 * 60 * 60 * 24) + 1;
                 const osnovnaCijena = cijenaPoDanu * brojDana;
