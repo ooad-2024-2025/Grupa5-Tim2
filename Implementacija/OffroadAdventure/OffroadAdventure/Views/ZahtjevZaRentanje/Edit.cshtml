@@ -75,7 +75,9 @@
 
     <div class="form-group">
         <label asp-for="cijena"></label>
-        <input asp-for="cijena" class="form-control" readonly id="cijena" />
+        <input type="text" class="form-control" readonly id="cijena"
+               name="cijena"
+               value="@Model.cijena.ToString("0.00", System.Globalization.CultureInfo.InvariantCulture)" />
     </div>
 
     <div class="form-group">
@@ -120,6 +122,8 @@
             const datumOd = new Date(document.getElementById('datumOd').value);
             const datumDo = new Date(document.getElementById('datumDo').value);
             const checkboxes = document.querySelectorAll('input[name="vozilaId"]:checked');
+            const korisnikId = document.getElementById('korisnik_id')?.value;
+            const jeRegistrovan = korisnikId && korisnikId.trim() !== "";
 
             if (!datumOd || !datumDo || datumOd > datumDo || checkboxes.length === 0) return;
 
@@ -133,8 +137,17 @@
 
             const brojVozila = checkboxes.length;
             const osnovnaCijena = sumaCijena * brojDana;
-            const popust = Math.min((Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2), 50);
-            const konacnaCijena = osnovnaCijena * (1 - popust / 100);
+
+            let popust = 0;
+            let konacnaCijena = osnovnaCijena;
+
+            if (jeRegistrovan) {
+                popust = Math.min(
+                    (Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2),
+                    50
+                );
+                konacnaCijena = osnovnaCijena * (1 - popust / 100);
+            }
 
             document.getElementById('brojVozila').value = brojVozila;
             document.getElementById('popust').value = popust.toFixed(0);
@@ -160,7 +173,8 @@
                 cb.addEventListener('change', izracunajCijenuIPopust);
             });
 
-            izracunajCijenuIPopust(); 
+            izracunajCijenuIPopust();
         });
     </script>
+
 }

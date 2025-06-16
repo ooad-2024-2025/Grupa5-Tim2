@@ -140,7 +140,7 @@ namespace OffroadAdventure.Controllers
             await _context.SaveChangesAsync();
 
             TempData["poruka"] = $"Zahtjev je uspješno kreiran i uplata je izvršena! Očekujte obavještenje uskoro";
-            return RedirectToAction("dajDostupnaVozila", "Vozilo", new { id = zahtjevId });
+            return RedirectToAction("Recenzije", "Komentar", new { id = zahtjevId });
         }
 
 

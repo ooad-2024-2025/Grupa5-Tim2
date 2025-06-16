@@ -58,7 +58,8 @@ namespace OffroadAdventure.Areas.Identity.Pages.Account
             public string Prezime { get; set; }
 
             [Required(ErrorMessage = "Morate unijeti email")]
-            [EmailAddress]
+            [EmailAddress(ErrorMessage = "Email nije ispravan")]
+            [RegularExpression(@"^\S+$", ErrorMessage = "Email ne smije sadržavati razmake")]
             [Display(Name = "Email")]
             public string Email { get; set; }
 

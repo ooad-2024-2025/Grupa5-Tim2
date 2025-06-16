@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<OffroadAdventure.Models.ZahtjevZaRentanje>
 
 @{
-    ViewData["Title"] = "Upravljaj Zahtjevima";
+    ViewData["Title"] = "LISTA ZAHTJEVA";
 }
 
-<h1>Upravljaj Zahtjevima</h1>
+<h3 class="mb-4">LISTA ZAHTJEVA</h3>
 
 <p>
     <a asp-action="Create" class="btn btn-success">Kreiraj novi zahtjev</a>
@@ -122,19 +122,19 @@
 </div>
 <style>
     .tabela-wrapper {
-        margin: 0 !important;
-        padding: 0 !important;
-        max-width: 100%;
+        padding-left: 10px;
         overflow-x: auto;
     }
 
         .tabela-wrapper table {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
             width: 100%;
         }
 
-    h1 {
-        margin-left: 0 !important;
+    h3 {
+        padding-left: 10px;
+    }
+
+    p {
+        padding-left: 10px;
     }
 </style>

@@ -6,6 +6,9 @@
 @{
     var user = User.Identity.IsAuthenticated ? await UserManager.GetUserAsync(User) : null;
 }
+@{
+    var isEditZahtjev = Context.Request.Path.Value?.ToLower().Contains("/zahtjevzarentanje") ?? false;
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,11 +88,12 @@
         </div>
     </div>
 
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="@(isEditZahtjev ? "" : "container")">
+        <main role="main" class="@(isEditZahtjev ? "p-0" : "pb-3")">
             @RenderBody()
         </main>
     </div>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

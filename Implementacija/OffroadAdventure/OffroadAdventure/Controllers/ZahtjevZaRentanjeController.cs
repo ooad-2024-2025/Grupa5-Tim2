@@ -79,22 +79,40 @@ namespace OffroadAdventure.Controllers
                 TempData["porukaGreska"] = "Morate odabrati barem jedno vozilo.";
                 return RedirectToAction("Rezervacija", "Vozilo");
             }
+
             z.korisnik_id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ModelState.Remove(nameof(z.korisnik_id));
             ModelState.Remove(nameof(z.User));
             z.statusZahtjeva = StatusZahtjeva.NA_CEKANJU;
+
             if (string.IsNullOrWhiteSpace(z.dodatniZahtjev))
             {
                 z.dodatniZahtjev = "";
                 ModelState.Remove(nameof(z.dodatniZahtjev));
             }
+
             var vozila = await _context.Vozilo.Where(v => vozilaId.Contains(v.id)).ToListAsync();
-            var (popustProcenat, cijenaSaPopustom) = IzracunajPopust(vozila, z.datumOd, z.datumDo);
-            z.popust = popustProcenat;
+
+            double popustProcenat = 0;
+            double cijenaSaPopustom;
+
+            if (User.Identity.IsAuthenticated)
+            {
+                (popustProcenat, cijenaSaPopustom) = IzracunajPopust(vozila, z.datumOd, z.datumDo);
+            }
+            else
+            {
+                int brojDana = (z.datumDo - z.datumOd).Days + 1;
+                double osnovnaCijena = vozila.Sum(v => v.cijenaPoDanu) * brojDana;
+                cijenaSaPopustom = osnovnaCijena;
+            }
+
+            z.popust = (int)popustProcenat;
             z.cijena = cijenaSaPopustom;
 
             _context.ZahtjevZaRentanje.Add(z);
             await _context.SaveChangesAsync();
+
             foreach (var vozilo in vozila)
             {
                 var stavka = new StavkaZahtjeva
@@ -123,6 +141,7 @@ namespace OffroadAdventure.Controllers
                 ViewBag.ZahtjevId = z.id;
                 return View("~/Views/Home/KarticnoPlacanje.cshtml");
             }
+
             var uloge = new[] { "Administrator", "Zaposlenik" };
 
             var korisnici = await _context.Users
@@ -144,14 +163,15 @@ namespace OffroadAdventure.Controllers
             }
 
             await _context.SaveChangesAsync();
+
             if (izvor == "Rezervacija")
             {
-                return RedirectToAction("dajDostupnaVozila", "Vozilo");
+                return RedirectToAction("Recenzije", "Komentar");
             }
 
             return RedirectToAction("Index");
-
         }
+
         [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Edit(int? id)
         {
