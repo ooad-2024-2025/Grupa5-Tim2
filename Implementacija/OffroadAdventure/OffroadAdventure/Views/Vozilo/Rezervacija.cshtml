@@ -9,27 +9,40 @@
 <div class="rezervacija-wrapper">
     <div class="forma-strana">
         <h2>Rezervacija</h2>
-
         <form asp-controller="ZahtjevZaRentanje" asp-action="Create" method="post">
             <div class="rezervacija-odabrana-vozila">
                 <label>Odabrana vozila:</label>
-                <ul>
+                <div class="odabrana-vozila-grid">
                     @foreach (var vozilo in ViewBag.OdabranaVozila as List<OffroadAdventure.Models.Vozilo>)
                     {
-                        <li>@vozilo.model (@vozilo.tip)</li>
-                        <input type="hidden" name="vozilaId" value="@vozilo.id" />
+                        <div class="vozilo-kartica">
+                            <img src="@vozilo.slikaURL" alt="slika vozila" />
+                            <div class="kartica-sadrzaj">
+                                <strong>@vozilo.model</strong>
+                                <div>Vrsta: @vozilo.tip</div>
+                                <div class="cijena">@vozilo.cijenaPoDanu KM</div>
+                            </div>
+                            <input type="hidden" name="vozilaId" value="@vozilo.id" />
+                        </div>
                     }
-                </ul>
+                </div>
+
             </div>
 
             <div class="form-row">
-                <input asp-for="ime" placeholder="Ime" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}( [A-ZČĆŽŠĐa-zčćžšđ]+)*$" title="Ime mora sadržavati samo slova i može imati razmak" required />
-                <input asp-for="prezime" placeholder="Prezime" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}( [A-ZČĆŽŠĐa-zčćžšđ]+)*$" title="Prezime mora sadržavati samo slova i može imati razmak" required />
+                <input asp-for="ime" placeholder="Ime" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}$" title="Ime može sadržavati samo slova" required />
+                <input asp-for="prezime" placeholder="Prezime" pattern="^[A-ZČĆŽŠĐa-zčćžšđ]{2,}$" title="Prezime može sadržavati samo slova" required />
             </div>
 
             <div class="form-row">
-                <input asp-for="brojTelefona" placeholder="Broj telefona" pattern="[0-9]+" title="Broj telefona mora sadržavati samo brojeve" required />
-                <input asp-for="email" placeholder="Email adresa" type="email" required />
+                <input asp-for="brojTelefona" placeholder="Broj telefona"
+                       pattern="^\d{9,10}$"
+                       title="Broj telefona mora sadržavati 9 ili 10 cifara bez razmaka" required />
+                <input asp-for="email" placeholder="Email adresa"
+                       pattern="^\S+$"
+                       title="Email ne smije sadržavati razmake"
+                       required />
+           
             </div>
 
             <div class="form-row">
@@ -47,6 +60,7 @@
                     <label for="brojVozila" style="visibility: hidden;">Nevidljiv label</label>
                     <input type="text" id="brojVozila" value="Broj vozila: @brojVozila" disabled />
                     <input type="hidden" asp-for="brojVozila" value="@brojVozila" />
+                    <input type="hidden" name="izvor" value="Rezervacija" />
                 </div>
             </div>
 
@@ -59,20 +73,21 @@
                     <button type="submit" name="akcija" value="kartica" >Plati karticom</button>
                 }
             </div>
-            @if (TempData["poruka"] != null)
-            {
-                <div class="poruka-uspjesnosti">
-                    @TempData["poruka"]
-                </div>
-            }
 
             <div class="cijena-info">
                 <span id="popust-info">Popust: @ViewBag.Popust %</span>
                 <span id="cijena-bez-info">Cijena bez popusta: @ViewBag.CijenaBez KM</span>
                 <span id="cijena-sa-info">Cijena sa popustom: @ViewBag.CijenaSa KM</span>
             </div>
-        </form>
+        </form>    
+        @if (TempData["porukaGreska"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["porukaGreska"]
+            </div>
+        }
     </div>
+
 
     <div class="tekst-strana">
         <p><strong>Napravite rezervaciju svog vozila na vrijeme.</strong></p>
@@ -82,36 +97,62 @@
         </p>
         <p>Forma je informativnog sadržaja – neophodno je napraviti telefonsku potvrdu prije datuma i vremena rezervacije.</p>
     </div>
-</div>
-@section Scripts {
-    <script>
-        const datumOdInput = document.getElementById('datumOd');
-        const datumDoInput = document.getElementById('datumDo');
-        const popustSpan = document.getElementById('popust-info');
-        const cijenaBezSpan = document.getElementById('cijena-bez-info');
-        const cijenaSaSpan = document.getElementById('cijena-sa-info');
 
-        const brojVozila = @brojVozila;
-        const cijenaPoDanu = @cijenaPoDanu;
+    @section Scripts {
+        <script>
+            const datumOdInput = document.getElementById('datumOd');
+            const datumDoInput = document.getElementById('datumDo');
+            const popustSpan = document.getElementById('popust-info');
+            const cijenaBezSpan = document.getElementById('cijena-bez-info');
+            const cijenaSaSpan = document.getElementById('cijena-sa-info');
 
-        function izracunajZaPrikaz() {
-            const od = new Date(datumOdInput.value);
-            const ddo = new Date(datumDoInput.value);
-            if (isNaN(od) || isNaN(ddo) || od > ddo) return;
+            const brojVozila = @brojVozila;
+            const cijenaPoDanu = @cijenaPoDanu;
 
-            const brojDana = (ddo - od) / (1000 * 60 * 60 * 24) + 1;
-            const osnovnaCijena = cijenaPoDanu * brojDana;
-            const popustProcenat = Math.min((Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2), 50);
-            const cijenaSa = osnovnaCijena * (1 - popustProcenat / 100);
+            function izracunajZaPrikaz() {
+                const od = new Date(datumOdInput.value);
+                const ddo = new Date(datumDoInput.value);
+                if (isNaN(od) || isNaN(ddo) || od > ddo) return;
 
-            popustSpan.innerText = `Popust: ${popustProcenat.toFixed(0)}%`;
-            cijenaBezSpan.innerText = `Cijena bez popusta: ${osnovnaCijena.toFixed(2)} KM`;
-            cijenaSaSpan.innerText = `Cijena sa popustom: ${cijenaSa.toFixed(2)} KM`;
-        }
+                const brojDana = (ddo - od) / (1000 * 60 * 60 * 24) + 1;
+                const osnovnaCijena = cijenaPoDanu * brojDana;
+                const popustProcenat = Math.min((Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2), 50);
+                const cijenaSa = osnovnaCijena * (1 - popustProcenat / 100);
 
-        datumOdInput.addEventListener('change', izracunajZaPrikaz);
-        datumDoInput.addEventListener('change', izracunajZaPrikaz);
-    </script>
-}
+                popustSpan.innerText = `Popust: ${popustProcenat.toFixed(0)}%`;
+                cijenaBezSpan.innerText = `Cijena bez popusta: ${osnovnaCijena.toFixed(2)} KM`;
+                cijenaSaSpan.innerText = `Cijena sa popustom: ${cijenaSa.toFixed(2)} KM`;
+            }
 
-}
+            datumOdInput.addEventListener('change', function () {
+                datumDoInput.min = datumOdInput.value;
+                izracunajZaPrikaz();
+            });
+
+            datumDoInput.addEventListener('change', function () {
+                datumOdInput.max = datumDoInput.value;
+                izracunajZaPrikaz();
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                if (datumOdInput.value)
+                    datumDoInput.min = datumOdInput.value;
+
+                if (datumDoInput.value)
+                    datumOdInput.max = datumDoInput.value;
+            });
+                window.addEventListener('DOMContentLoaded', () => {
+                const today = new Date().toISOString().split('T')[0];
+
+           
+                if (!datumOdInput.value) datumOdInput.value = today;
+                if (!datumDoInput.value) datumDoInput.value = today;
+
+                datumDoInput.min = datumOdInput.value;
+                datumOdInput.max = datumDoInput.value;
+
+                izracunajZaPrikaz();
+            });
+        </script>
+    }
+

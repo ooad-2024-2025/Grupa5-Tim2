@@ -44,46 +44,35 @@ namespace OffroadAdventure.Controllers
             return View(komentar);
         }
 
-        // GET: Komentars/Create
-        [Authorize(Roles = "Administrator")]
-        public IActionResult Create()
-        {
-            return View();
-        }
-
         // POST: Komentars/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [Authorize(Roles = "Administrator")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,autor_id,komentarId,ocjena,tekst,datum")] Komentar komentar)
+        public async Task<IActionResult> Create([Bind("Id,komentarId,ocjena,tekst,datum")] Komentar komentar)
         {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return Forbid(); 
+            }
+
+            komentar.autor_id = user.Id;
+
             if (ModelState.IsValid)
             {
                 _context.Add(komentar);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(komentar);
         }
+
 
         // GET: Komentars/Edit/5
         [Authorize(Roles = "Administrator")]
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var komentar = await _context.Komentar.FindAsync(id);
-            if (komentar == null)
-            {
-                return NotFound();
-            }
-            return View(komentar);
-        }
 
         // POST: Komentars/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -189,14 +178,12 @@ namespace OffroadAdventure.Controllers
         {
             if (string.IsNullOrWhiteSpace(Tekst) || Ocjena < 1 || Ocjena > 5)
             {
-                TempData["Poruka"] = "Neispravan unos.";
                 return RedirectToAction("Recenzije", "Komentar");
             }
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                TempData["Poruka"] = "Morate biti prijavljeni.";
                 return RedirectToAction("Recenzije", "Komentar");
             }
 
@@ -211,7 +198,6 @@ namespace OffroadAdventure.Controllers
             _context.Komentar.Add(komentar);
             await _context.SaveChangesAsync();
 
-            TempData["Poruka"] = "Komentar uspješno objavljen.";
             return RedirectToAction("Recenzije", "Komentar");
         }
 
@@ -230,7 +216,6 @@ namespace OffroadAdventure.Controllers
             _context.Komentar.Remove(komentar);
             await _context.SaveChangesAsync();
 
-            TempData["Poruka"] = "Komentar uspješno obrisan.";
             return RedirectToAction("Recenzije", "Komentar"); ;
         }
 
@@ -241,14 +226,12 @@ namespace OffroadAdventure.Controllers
         {
             if (string.IsNullOrWhiteSpace(tekstOdgovora) || tekstOdgovora.Length < 2)
             {
-                TempData["Poruka"] = "Odgovor je prekratak.";
                 return RedirectToAction("Recenzije");
             }
 
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                TempData["Poruka"] = "Morate biti prijavljeni.";
                 return RedirectToAction("Recenzije");
             }
 
@@ -281,7 +264,6 @@ namespace OffroadAdventure.Controllers
                 await _context.SaveChangesAsync();
             }
 
-            TempData["Poruka"] = "Odgovor je dodan.";
             return RedirectToAction("Recenzije");
         }
 

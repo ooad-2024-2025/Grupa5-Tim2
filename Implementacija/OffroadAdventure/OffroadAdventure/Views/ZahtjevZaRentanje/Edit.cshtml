@@ -1,89 +1,166 @@
 ﻿@model OffroadAdventure.Models.ZahtjevZaRentanje
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Uredi";
+    var selektovanaVozila = ViewBag.SelektovanaVozila as List<int> ?? new List<int>();
 }
 
-<h1>Edit</h1>
+<h1>Uredi</h1>
 
-<h4>ZahtjevZaRentanje</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="id" />
-            <div class="form-group">
-                <label asp-for="korisnik_id" class="control-label"></label>
-                <select asp-for="korisnik_id" class="form-control" asp-items="ViewBag.korisnik_id"></select>
-                <span asp-validation-for="korisnik_id" class="text-danger"></span>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="id" />
+
+    <div class="form-group">
+        <label>Odaberi vozila:</label>
+        <div class="lista-scroll">
+            <div class="vozila-lista">
+                @foreach (var vozilo in (List<OffroadAdventure.Models.Vozilo>)ViewBag.SvaVozila)
+                {
+                    var isChecked = selektovanaVozila.Contains(vozilo.id) ? "checked" : "";
+                    <label class="vozilo-kartica">
+                        <input class="vozilo-checkbox" type="checkbox" name="vozilaId" value="@vozilo.id" data-cijena="@vozilo.cijenaPoDanu" @isChecked />
+                        <img class="vozilo-slika" src="@vozilo.slikaURL" alt="slika vozila" />
+                        <div class="vozilo-info">
+                            <strong>@vozilo.model</strong><br />
+                            Vrsta vozila: @vozilo.tip
+                        </div>
+                        <div class="vozilo-cijena">
+                            <span>Cijena</span> @vozilo.cijenaPoDanu KM
+                        </div>
+                    </label>
+                }
             </div>
-            <div class="form-group">
-                <label asp-for="datumOd" class="control-label"></label>
-                <input asp-for="datumOd" class="form-control" />
-                <span asp-validation-for="datumOd" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="datumDo" class="control-label"></label>
-                <input asp-for="datumDo" class="form-control" />
-                <span asp-validation-for="datumDo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="brojVozila" class="control-label"></label>
-                <input asp-for="brojVozila" class="form-control" />
-                <span asp-validation-for="brojVozila" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="statusZahtjeva" class="control-label"></label>
-                <select asp-for="statusZahtjeva" class="form-control" asp-items="ViewBag.Statusi"></select>
-                <span asp-validation-for="statusZahtjeva" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="popust" class="control-label"></label>
-                <input asp-for="popust" class="form-control" />
-                <span asp-validation-for="popust" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="cijena" class="control-label"></label>
-                <input asp-for="cijena" class="form-control" />
-                <span asp-validation-for="cijena" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ime" class="control-label"></label>
-                <input asp-for="ime" class="form-control" />
-                <span asp-validation-for="ime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="prezime" class="control-label"></label>
-                <input asp-for="prezime" class="form-control" />
-                <span asp-validation-for="prezime" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="email" class="control-label"></label>
-                <input asp-for="email" class="form-control" />
-                <span asp-validation-for="email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="brojTelefona" class="control-label"></label>
-                <input asp-for="brojTelefona" class="form-control" />
-                <span asp-validation-for="brojTelefona" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="dodatniZahtjev" class="control-label"></label>
-                <input asp-for="dodatniZahtjev" class="form-control" />
-                <span asp-validation-for="dodatniZahtjev" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="korisnik_id"></label>
+        <select class="form-control" asp-for="korisnik_id" asp-items="ViewBag.korisnik_id" disabled></select>
+        <input type="hidden" asp-for="korisnik_id" />
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="datumOd"></label>
+        <input asp-for="datumOd" class="form-control" type="date"
+               min="@DateTime.Now.ToString("yyyy-MM-dd")"
+               max="@DateTime.Now.AddYears(1).ToString("yyyy-MM-dd")"
+               id="datumOd" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="datumDo"></label>
+        <input asp-for="datumDo" class="form-control" type="date"
+               min="@DateTime.Now.ToString("yyyy-MM-dd")"
+               max="@DateTime.Now.AddYears(1).ToString("yyyy-MM-dd")"
+               id="datumDo" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="brojVozila"></label>
+        <input asp-for="brojVozila" class="form-control" readonly id="brojVozila" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="statusZahtjeva"></label>
+        <select asp-for="statusZahtjeva" class="form-control" asp-items="ViewBag.Statusi"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="popust"></label>
+        <input asp-for="popust" class="form-control" readonly id="popust" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="cijena"></label>
+        <input asp-for="cijena" class="form-control" readonly id="cijena" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ime"></label>
+        <input asp-for="ime" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="prezime"></label>
+        <input asp-for="prezime" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="email"></label>
+        <input asp-for="email" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="brojTelefona"></label>
+        <input asp-for="brojTelefona" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="dodatniZahtjev"></label>
+        <input asp-for="dodatniZahtjev" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Spasi" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="Index">Nazad na listu</a>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        function izracunajCijenuIPopust() {
+            const datumOd = new Date(document.getElementById('datumOd').value);
+            const datumDo = new Date(document.getElementById('datumDo').value);
+            const checkboxes = document.querySelectorAll('input[name="vozilaId"]:checked');
+
+            if (!datumOd || !datumDo || datumOd > datumDo || checkboxes.length === 0) return;
+
+            const brojDana = Math.floor((datumDo - datumOd) / (1000 * 60 * 60 * 24)) + 1;
+            let sumaCijena = 0;
+
+            checkboxes.forEach(cb => {
+                const cijena = parseFloat(cb.getAttribute('data-cijena'));
+                if (!isNaN(cijena)) sumaCijena += cijena;
+            });
+
+            const brojVozila = checkboxes.length;
+            const osnovnaCijena = sumaCijena * brojDana;
+            const popust = Math.min((Math.max(brojVozila - 1, 0) * 5 + Math.max(brojDana - 1, 0) * 2), 50);
+            const konacnaCijena = osnovnaCijena * (1 - popust / 100);
+
+            document.getElementById('brojVozila').value = brojVozila;
+            document.getElementById('popust').value = popust.toFixed(0);
+            document.getElementById('cijena').value = konacnaCijena.toFixed(2);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const datumOd = document.getElementById('datumOd');
+            const datumDo = document.getElementById('datumDo');
+            const checkboxi = document.querySelectorAll('input[name="vozilaId"]');
+
+            datumOd.addEventListener('change', function () {
+                datumDo.min = datumOd.value;
+                izracunajCijenuIPopust();
+            });
+
+            datumDo.addEventListener('change', function () {
+                datumOd.max = datumDo.value;
+                izracunajCijenuIPopust();
+            });
+
+            checkboxi.forEach(cb => {
+                cb.addEventListener('change', izracunajCijenuIPopust);
+            });
+
+            izracunajCijenuIPopust(); 
+        });
+    </script>
 }

@@ -36,16 +36,14 @@ namespace OffroadAdventure.Controllers
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
-            {
                 return NotFound();
-            }
 
             var notifikacija = await _context.Notifikacija
+                .Include(n => n.User) 
                 .FirstOrDefaultAsync(m => m.id == id);
+
             if (notifikacija == null)
-            {
                 return NotFound();
-            }
 
             return View(notifikacija);
         }
@@ -54,8 +52,24 @@ namespace OffroadAdventure.Controllers
         [Authorize(Roles = "Administrator")]
         public IActionResult Create()
         {
-            return View();
+            ViewBag.Korisnici = new SelectList(_context.Users.ToList(), "Email", "Email");
+
+            ViewBag.Statusi = Enum.GetValues(typeof(StatusNotifikacije))
+                .Cast<StatusNotifikacije>()
+                .Select(s => new SelectListItem
+                {
+                    Text = s.ToString(),
+                    Value = ((int)s).ToString()
+                }).ToList();
+
+            var notifikacija = new Notifikacija
+            {
+                datum = DateTime.Now
+            };
+
+            return View(notifikacija);
         }
+
 
         // POST: Notifikacijas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -73,21 +87,6 @@ namespace OffroadAdventure.Controllers
             return View(notifikacija);
         }
 
-        // GET: Notifikacijas/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var notifikacija = await _context.Notifikacija.FindAsync(id);
-            if (notifikacija == null)
-            {
-                return NotFound();
-            }
-            return View(notifikacija);
-        }
 
         // POST: Notifikacijas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -123,6 +122,7 @@ namespace OffroadAdventure.Controllers
             }
             return View(notifikacija);
         }
+
 
         // GET: Notifikacijas/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -228,6 +228,57 @@ namespace OffroadAdventure.Controllers
 
             return Json(postoji);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrator")]
+        public async Task<IActionResult> KreirajNotifikaciju(string tekst, StatusNotifikacije status, string emailPrimalac)
+        {
+            if (string.IsNullOrWhiteSpace(emailPrimalac))
+            {
+                ModelState.AddModelError("emailPrimalac", "Primalac je obavezan.");
+            }
+
+            if (string.IsNullOrWhiteSpace(tekst))
+            {
+                ModelState.AddModelError("tekst", "Tekst notifikacije je obavezan.");
+            }
+
+            var korisnik = await _context.Users.FirstOrDefaultAsync(u => u.Email == emailPrimalac);
+            if (korisnik == null)
+            {
+                ModelState.AddModelError("emailPrimalac", "Korisnik sa datim emailom ne postoji.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Korisnici = new SelectList(_context.Users.ToList(), "Email", "Email");
+                ViewBag.Statusi = Enum.GetValues(typeof(StatusNotifikacije))
+                    .Cast<StatusNotifikacije>()
+                    .Select(s => new SelectListItem
+                    {
+                        Text = s.ToString(),
+                        Value = ((int)s).ToString()
+                    }).ToList();
+
+                return View("Create", new Notifikacija { tekst = tekst, status = status, datum = DateTime.Now });
+            }
+
+            var notifikacija = new Notifikacija
+            {
+                primalac_id = korisnik.Id,
+                tekst = tekst,
+                status = status,
+                datum = DateTime.Now
+            };
+
+            _context.Notifikacija.Add(notifikacija);
+            await _context.SaveChangesAsync();
+
+            TempData["message"] = "Notifikacija uspješno kreirana!";
+            return RedirectToAction(nameof(Index));
+        }
+
 
 
     }

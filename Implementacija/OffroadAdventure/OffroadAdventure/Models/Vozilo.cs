@@ -15,6 +15,7 @@ namespace OffroadAdventure.Models
         public string tip { get; set; }
         [Required(ErrorMessage = "Morate unijeti cijenu")]
         [Range(0.0, Double.MaxValue, ErrorMessage = "Cijena mora biti pozitivan broj.")]
+        [RegularExpression(@"^\d+$, zareza ", ErrorMessage = "Cijena mora sadržavati samo cifre")]
         public double cijenaPoDanu { get; set; }
         public Boolean dostupno { get; set; }
         [Url(ErrorMessage = "Unesite ispravan URL slike.")]

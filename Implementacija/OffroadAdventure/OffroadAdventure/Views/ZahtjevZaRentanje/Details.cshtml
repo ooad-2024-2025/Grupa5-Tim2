@@ -1,22 +1,46 @@
 ﻿@model OffroadAdventure.Models.ZahtjevZaRentanje
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalji";
 }
 
-<h1>Details</h1>
+<h1>Detalji</h1>
 
 <div>
-    <h4>ZahtjevZaRentanje</h4>
     <hr />
     <dl class="row">
         <h5>Odabrana vozila:</h5>
-        <ul>
+        <div class="vozila-grid">
             @foreach (var stavka in Model.Stavke)
             {
-                <li>@stavka.Vozilo.model - @stavka.Vozilo.tip</li>
+                var vozilo = stavka.Vozilo;
+                <div class="vozilo-kartica disabled-kartica">
+                    <img class="vozilo-slika" src="@vozilo.slikaURL" alt="slika vozila" />
+                    <div class="vozilo-info">
+                        <strong>@vozilo.model</strong><br />
+                        Vrsta vozila: @vozilo.tip
+                    </div>
+                    <div class="vozilo-cijena">
+                        <span>Cijena</span><br />
+                        @vozilo.cijenaPoDanu KM
+                    </div>
+                </div>
             }
+        </div>
         </ul>
+        <dt class="col-sm-2">
+            Način plaćanja
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Placanje?.nacinPlacanja.ToString()
+        </dd>
+
+        <dt class="col-sm-2">
+            Status plaćanja
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Placanje?.statusPlacanja.ToString()
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.datumOd)
         </dt>

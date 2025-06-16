@@ -6,9 +6,6 @@
 
 <h1>Lista komentara</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-success">Napravi novi</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -49,7 +46,6 @@
                 @Html.DisplayFor(modelItem => item.datum)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">Izmjeni</a>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info text-white">Detalji</a>
                     <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">Obriši</a>
             </td>

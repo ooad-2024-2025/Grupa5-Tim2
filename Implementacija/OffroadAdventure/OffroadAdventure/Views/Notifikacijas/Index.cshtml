@@ -7,7 +7,7 @@
 <h1>Lista notifikacija</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-success">Dodaj novi</a>
+    <a asp-action="Create" class="btn btn-success">Kreiraj novu notifikaciju</a>
 
 </p>
 <table class="table">
@@ -44,11 +44,8 @@
                 @Html.DisplayFor(modelItem => item.status)
             </td>
             <td>
-                    <div class="btn-group" role="group">
-                        <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-warning">Uredi</a>
                         <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info text-white">Detalji</a>
                         <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger">Obriši</a>
-                    </div>
 
             </td>
         </tr>

@@ -4,7 +4,7 @@
     <div class="vozila-header">
         <h2>Trenutno dostupna vozila</h2>
     </div>
-
+     
     <div class="vozila-filters">
         @{
             string poredak = ViewBag.SelektovaniPoredak as string;
@@ -56,6 +56,12 @@
             <div class="vozila-lijeva-strana">
                 <div class="lista-scroll">
                     <div class="vozila-lista">
+                         @if (Model.Count == 0)
+    {
+        <div class="nema-vozila">
+            <p>Žao nam je. Trenutno nemamo dostupnih vozila.</p>
+        </div>
+    }
                         @foreach (var vozilo in Model)
                         {
                             <div class="vozilo-kartica">
@@ -65,7 +71,6 @@
                                 <div class="vozilo-info">
                                     <strong>@vozilo.model</strong>
                                     <p>Vrsta vozila: @vozilo.tip</p>
-                                    <p>Status: @(vozilo.dostupno ? "Dostupno" : "Nije dostupno")</p>
                                 </div>
                                 <div class="vozilo-cijena">
                                     <input type="checkbox" name="vozilaId" value="@vozilo.id" class="vozilo-checkbox" />
@@ -87,6 +92,7 @@
         </div>
     </form>
 </div>
+
 @section Scripts {
     <script>
         document.querySelector("form[action='/Vozilo/Rezervacija']").addEventListener("submit", function (e) {

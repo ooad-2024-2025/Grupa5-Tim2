@@ -1,17 +1,20 @@
 ﻿@model IEnumerable<OffroadAdventure.Models.ZahtjevZaRentanje>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Upravljaj Zahtjevima";
 }
 
-<h1>Index</h1>
+<h1>Upravljaj Zahtjevima</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-success">Napravi novi</a>
+    <a asp-action="Create" class="btn btn-success">Kreiraj novi zahtjev</a>
 </p>
+<div class="tabela-wrapper">
 <table class="table">
     <thead>
         <tr>
+            <th>Nacin plaćanja</th>
+            <th>Status plaćanja</th>
             <th>
                 @Html.DisplayNameFor(model => model.datumOd)
             </th>
@@ -54,6 +57,12 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+                <td>
+                    @item.Placanje?.nacinPlacanja.ToString()
+                </td>
+                <td>
+                    @item.Placanje?.statusPlacanja.ToString()
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.datumOd)
             </td>
@@ -91,7 +100,7 @@
                 @Html.DisplayFor(modelItem => item.User.Id)
             </td>
             <td>
-                    <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary" style="width: 70px;">Izmjeni</a>
+                    <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-sm btn-primary" style="width: 70px;">Uredi</a>
                     <a asp-action="Details" asp-route-id="@item.id" class="btn btn-sm btn-info text-white" style="width: 70px;">Detalji</a>
                     <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-sm btn-danger" style="width: 70px;">Obriši</a>
                     <form asp-action="Odobri" method="post" style="display:inline;" style="width: 70px;">
@@ -107,5 +116,25 @@
             </td>
         </tr>
 }
+
     </tbody>
 </table>
+</div>
+<style>
+    .tabela-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+        .tabela-wrapper table {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100%;
+        }
+
+    h1 {
+        margin-left: 0 !important;
+    }
+</style>

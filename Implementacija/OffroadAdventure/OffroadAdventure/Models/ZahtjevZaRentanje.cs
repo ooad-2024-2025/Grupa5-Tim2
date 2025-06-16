@@ -23,17 +23,29 @@ namespace OffroadAdventure.Models
         public double popust { get; set; }
 
         public double cijena { get; set; }
+
+        [Required(ErrorMessage = "Ime je obavezno")]
+        [RegularExpression("^[A-Za-zšđčćžŠĐČĆŽ]+$", ErrorMessage = "Ime smije sadržavati samo slova")]
         public string ime { get; set; }
 
-        public string prezime { get; set; } 
-        
-        public string email { get; set; }   
+        [Required(ErrorMessage = "Prezime je obavezno")]
+        [RegularExpression("^[A-Za-zšđčćžŠĐČĆŽ]+$", ErrorMessage = "Prezime smije sadržavati samo slova")]
+        public string prezime { get; set; }
 
+        [Required(ErrorMessage = "Email je obavezan")]
+        [EmailAddress(ErrorMessage = "Unesite ispravan email")]
+        [RegularExpression(@"^\S+$", ErrorMessage = "Email ne smije sadržavati razmake")]
+        public string email { get; set; }
+
+        [Required(ErrorMessage = "Broj telefona je obavezan")]
+        [RegularExpression(@"^\d{9,10}$", ErrorMessage = "Broj telefona mora imati 9 ili 10 cifara")]
         public string brojTelefona { get; set; }
         public ICollection<StavkaZahtjeva> Stavke { get; set; }
 
-        public string dodatniZahtjev {  get; set; } 
+        public string? dodatniZahtjev {  get; set; } 
         public ZahtjevZaRentanje() { }
+
+        public Placanje? Placanje { get; set; }
 
         public User User { get; set; }  
 

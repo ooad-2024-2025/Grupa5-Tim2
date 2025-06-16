@@ -34,6 +34,19 @@
 
     <div class="recenzije-desna">
         <h3>Ocijeni uslugu</h3>
+        @{
+            var isAuth = User.Identity.IsAuthenticated;
+        }
+
+        @if (!isAuth)
+        {
+            <div class="alert alert-info" style="margin-top: 10px;">
+                <span>
+                    Prijavite se kako biste mogli ostaviti komentar:
+                    <a href="/Identity/Account/Login" style="color: #007bff; text-decoration: underline;">Prijavite se</a>
+                </span>
+            </div>
+        }
         <div class="zvjezdice-ocjena">
             @for (int i = 1; i <= 5; i++)
             {
@@ -43,7 +56,17 @@
         <input type="hidden" id="ocjenaInput" name="ocjena" value="0" />
         <input type="text" placeholder="Ostavi komentar" class="komentar-input" />
         <button class="btn-objavi">Objavi</button>
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-danger">
+                @foreach (var modelError in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <p>@modelError.ErrorMessage</p>
+                }
+            </div>
+        }
     </div>
+
 </div>
 
 @section Scripts {

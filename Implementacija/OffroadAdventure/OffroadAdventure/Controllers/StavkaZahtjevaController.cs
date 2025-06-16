@@ -18,41 +18,7 @@ namespace OffroadAdventure.Controllers
             _context = context;
         }
 
-        // GET: StavkaZahtjeva
-        public async Task<IActionResult> Index()
-        {
-            var applicationDbContext = _context.StavkaZahtjeva.Include(s => s.Vozilo).Include(s => s.ZahtjevZaRentanje);
-            return View(await applicationDbContext.ToListAsync());
-        }
-
-        // GET: StavkaZahtjeva/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var stavkaZahtjeva = await _context.StavkaZahtjeva
-                .Include(s => s.Vozilo)
-                .Include(s => s.ZahtjevZaRentanje)
-                .FirstOrDefaultAsync(m => m.id == id);
-            if (stavkaZahtjeva == null)
-            {
-                return NotFound();
-            }
-
-            return View(stavkaZahtjeva);
-        }
-
-        // GET: StavkaZahtjeva/Create
-        public IActionResult Create()
-        {
-            ViewData["VoziloId"] = new SelectList(_context.Vozilo, "id", "model");
-            ViewData["ZahtjevZaRentanjeId"] = new SelectList(_context.ZahtjevZaRentanje, "id", "id");
-            return View();
-        }
-
+    
         // POST: StavkaZahtjeva/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -71,23 +37,7 @@ namespace OffroadAdventure.Controllers
             return View(stavkaZahtjeva);
         }
 
-        // GET: StavkaZahtjeva/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var stavkaZahtjeva = await _context.StavkaZahtjeva.FindAsync(id);
-            if (stavkaZahtjeva == null)
-            {
-                return NotFound();
-            }
-            ViewData["VoziloId"] = new SelectList(_context.Vozilo, "id", "model", stavkaZahtjeva.VoziloId);
-            ViewData["ZahtjevZaRentanjeId"] = new SelectList(_context.ZahtjevZaRentanje, "id", "id", stavkaZahtjeva.ZahtjevZaRentanjeId);
-            return View(stavkaZahtjeva);
-        }
+      
 
         // POST: StavkaZahtjeva/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -127,25 +77,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: StavkaZahtjeva/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var stavkaZahtjeva = await _context.StavkaZahtjeva
-                .Include(s => s.Vozilo)
-                .Include(s => s.ZahtjevZaRentanje)
-                .FirstOrDefaultAsync(m => m.id == id);
-            if (stavkaZahtjeva == null)
-            {
-                return NotFound();
-            }
-
-            return View(stavkaZahtjeva);
-        }
-
+     
         // POST: StavkaZahtjeva/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]

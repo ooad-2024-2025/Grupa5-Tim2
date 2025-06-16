@@ -5,12 +5,6 @@
     var sort = ViewBag.Sort as string ?? "";
 }
 
-@if (TempData["Poruka"] != null)
-{
-    <div class="alert alert-success" style="margin-bottom: 15px;">
-        @TempData["Poruka"]
-    </div>
-}
 
 <div class="recenzije-wrapper">
     <div class="recenzije-lijeva">

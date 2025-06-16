@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using OffroadAdventure.Data.Migrations;
@@ -20,23 +21,25 @@ namespace OffroadAdventure.Controllers
         {
             _context = context;
         }
-
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.ZahtjevZaRentanje
                 .Include(z => z.User)
                 .Include(z => z.Stavke)
-                    .ThenInclude(s => s.Vozilo);
+                    .ThenInclude(s => s.Vozilo)
+                     .Include(z => z.Placanje);
 
             return View(await applicationDbContext.ToListAsync());
         }
 
-
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
             var zahtjev = await _context.ZahtjevZaRentanje
-                .Include(z => z.User)
+                .Include(z => z.User).
+                Include(z => z.Placanje)
                 .Include(z => z.Stavke)
                     .ThenInclude(s => s.Vozilo)
                 .FirstOrDefaultAsync(z => z.id == id);
@@ -44,7 +47,7 @@ namespace OffroadAdventure.Controllers
             if (zahtjev == null) return NotFound();
             return View(zahtjev);
         }
-
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public IActionResult Create()
         {
             ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id");
@@ -55,14 +58,27 @@ namespace OffroadAdventure.Controllers
                Text = s.ToString(),
                Value = ((int)s).ToString()
            }).ToList();
-            ViewBag.SvaVozila = _context.Vozilo.ToList();
-            return View();
+            ViewBag.SvaVozila = _context.Vozilo
+         .Where(v => v.dostupno == true)
+         .ToList();
+            var zahtjev = new ZahtjevZaRentanje
+            {
+                datumOd = DateTime.Now,
+                datumDo = DateTime.Now.AddDays(1)
+            };
+            return View(zahtjev);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ZahtjevZaRentanje z, string akcija, List<int> vozilaId)
+        public async Task<IActionResult> Create(ZahtjevZaRentanje z, string akcija, List<int> vozilaId, string izvor)
         {
+            if (vozilaId == null || !vozilaId.Any())
+            {
+                ViewBag.SvaVozila = _context.Vozilo.ToList();
+                TempData["porukaGreska"] = "Morate odabrati barem jedno vozilo.";
+                return RedirectToAction("Rezervacija", "Vozilo");
+            }
             z.korisnik_id = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             ModelState.Remove(nameof(z.korisnik_id));
             ModelState.Remove(nameof(z.User));
@@ -128,69 +144,97 @@ namespace OffroadAdventure.Controllers
             }
 
             await _context.SaveChangesAsync();
+            if (izvor == "Rezervacija")
+            {
+                return RedirectToAction("dajDostupnaVozila", "Vozilo");
+            }
 
-            TempData["poruka"] = $"Zahtjev je uspješno kreiran! Očekujte obavještenje uskoro";
-            return RedirectToAction("Rezervacija", "Vozilo");
+            return RedirectToAction("Index");
+
         }
-
+        [Authorize(Roles = "Administrator, Zaposlenik")]
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var zahtjevZaRentanje = await _context.ZahtjevZaRentanje.FindAsync(id);
-            if (zahtjevZaRentanje == null)
-            {
-                return NotFound();
-            }
-            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjevZaRentanje.korisnik_id);
+            var zahtjev = await _context.ZahtjevZaRentanje
+                .Include(z => z.Stavke)
+                .FirstOrDefaultAsync(z => z.id == id);
+
+            if (zahtjev == null) return NotFound();
+
+            var selektovanaVozila = zahtjev.Stavke.Select(s => s.VoziloId).ToList();
+
+            ViewBag.SelektovanaVozila = selektovanaVozila;
+            ViewBag.SvaVozila = _context.Vozilo.Where(v => v.dostupno == true || selektovanaVozila.Contains(v.id)).ToList();
+
+            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjev.korisnik_id);
             ViewBag.Statusi = Enum.GetValues(typeof(StatusZahtjeva))
-           .Cast<StatusZahtjeva>()
-           .Select(s => new SelectListItem
-           {
-               Text = s.ToString(),
-               Value = ((int)s).ToString()
-           }).ToList();
-            return View(zahtjevZaRentanje);
+               .Cast<StatusZahtjeva>()
+               .Select(s => new SelectListItem
+               {
+                   Text = s.ToString(),
+                   Value = ((int)s).ToString()
+               }).ToList();
+
+            return View(zahtjev);
         }
 
         // POST: ZahtjevZaRentanje/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,korisnik_id,datumOd,datumDo,brojVozila,status,statusZahtjeva,popust,cijena,ime,prezime,email,brojTelefona,dodatniZahtjev")] ZahtjevZaRentanje zahtjevZaRentanje)
+        public async Task<IActionResult> Edit(int id, ZahtjevZaRentanje zahtjev, List<int> vozilaId)
         {
-            if (id != zahtjevZaRentanje.id)
-            {
+            if (id != zahtjev.id)
                 return NotFound();
+
+            var zahtjevIzBaze = await _context.ZahtjevZaRentanje
+                .Include(z => z.Stavke)
+                .FirstOrDefaultAsync(z => z.id == id);
+
+            if (zahtjevIzBaze == null)
+                return NotFound();
+
+            // Ažuriranje podataka
+            zahtjevIzBaze.ime = zahtjev.ime;
+            zahtjevIzBaze.prezime = zahtjev.prezime;
+            zahtjevIzBaze.email = zahtjev.email;
+            zahtjevIzBaze.brojTelefona = zahtjev.brojTelefona;
+            zahtjevIzBaze.korisnik_id = zahtjev.korisnik_id;
+            zahtjevIzBaze.datumOd = zahtjev.datumOd;
+            zahtjevIzBaze.datumDo = zahtjev.datumDo;
+            zahtjevIzBaze.statusZahtjeva = zahtjev.statusZahtjeva;
+            zahtjevIzBaze.dodatniZahtjev = zahtjev.dodatniZahtjev ?? "";
+
+            // Popust i cijena
+            var vozila = await _context.Vozilo.Where(v => vozilaId.Contains(v.id)).ToListAsync();
+            var (popustProcenat, cijenaSaPopustom) = IzracunajPopust(vozila, zahtjev.datumOd, zahtjev.datumDo);
+            zahtjevIzBaze.popust = popustProcenat;
+            zahtjevIzBaze.cijena = cijenaSaPopustom;
+            zahtjevIzBaze.brojVozila = vozila.Count;
+
+            // Ukloni stare stavke
+            _context.StavkaZahtjeva.RemoveRange(zahtjevIzBaze.Stavke);
+            await _context.SaveChangesAsync();
+
+            // Dodaj nove stavke
+            foreach (var voziloId in vozilaId)
+            {
+                _context.StavkaZahtjeva.Add(new StavkaZahtjeva
+                {
+                    ZahtjevZaRentanjeId = id,
+                    VoziloId = voziloId
+                });
             }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(zahtjevZaRentanje);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ZahtjevZaRentanjeExists(zahtjevZaRentanje.id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["korisnik_id"] = new SelectList(_context.Users, "Id", "Id", zahtjevZaRentanje.korisnik_id);
-            return View(zahtjevZaRentanje);
+            // Spašavanje zahtjeva
+            _context.Entry(zahtjevIzBaze).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
+
 
         // GET: ZahtjevZaRentanje/Delete/5
         public async Task<IActionResult> Delete(int? id)

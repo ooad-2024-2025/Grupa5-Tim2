@@ -1,36 +1,36 @@
 ﻿@model OffroadAdventure.Models.Notifikacija
 
 @{
-    ViewData["Title"] = "Kreiraj";
+    ViewData["Title"] = "Kreiraj novu notifikaciju";
 }
 
-<h1>Kreiraj</h1>
+<h1>Kreiraj novu notifikaciju</h1>
 
-<h4>Notifikacija</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="KreirajNotifikaciju">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="primalac_id" class="control-label"></label>
-                <input asp-for="primalac_id" class="form-control" />
-                <span asp-validation-for="primalac_id" class="text-danger"></span>
-            </div>
+            <select name="emailPrimalac" class="form-control">
+                @foreach (var korisnik in (IEnumerable<SelectListItem>)ViewBag.Korisnici)
+                {
+                    <option value="@korisnik.Value">@korisnik.Text</option>
+                }
+            </select>
             <div class="form-group">
                 <label asp-for="tekst" class="control-label"></label>
                 <input asp-for="tekst" class="form-control" />
                 <span asp-validation-for="tekst" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="datum" class="control-label"></label>
-                <input asp-for="datum" class="form-control" type="datetime-local" />
+                <label>Datum</label>
+                <input asp-for="datum" class="form-control" type="hidden" value="@Model.datum.ToString("yyyy-MM-ddTHH:mm")" />
                 <span asp-validation-for="datum" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="form-check-label">
-                    <input class="form-check-input" asp-for="status" /> @Html.DisplayNameFor(model => model.status)
-                </label>
+                <label asp-for="status" class="control-label"></label>
+                <select asp-for="status" class="form-control" asp-items="ViewBag.Statusi"></select>
+                <span asp-validation-for="status" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Kreiraj" class="btn btn-primary" /> 

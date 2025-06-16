@@ -304,8 +304,94 @@ html {
 }
 
 /*Izgled elemenata za karticu rezervacija*/
+
+.odabrana-vozila-scroll {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: #fdfdfd;
+}
+
+.vozilo-kartica {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    margin-bottom: 6px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: white;
+}
+
+    .vozilo-kartica img {
+        width: 60px;
+        height: 45px;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+.kartica-sadrzaj {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .kartica-sadrzaj .cijena {
+        font-weight: bold;
+        margin-top: 4px;
+        color: #2a2a2a;
+    }
+
+.odabrana-vozila-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+}
+
+.vozilo-kartica {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+    .vozilo-kartica img {
+        width: 64px;
+        height: 48px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+    }
+
+.kartica-sadrzaj {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+    .kartica-sadrzaj .cijena {
+        font-weight: bold;
+        color: #2a2a2a;
+    }
+
+
 .rezervacija-odabrana-vozila {
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .rezervacija-odabrana-vozila ul {
@@ -316,7 +402,7 @@ html {
 .rezervacija-wrapper {
     display: flex;
     justify-content: center;
-    padding: 100px 40px;
+    padding: 20px 20px;
     gap: 4rem;
 }
 
@@ -329,6 +415,7 @@ html {
 
 .tekst-strana {
     flex: 1;
+    justify-content: center;
     font-size: 1.1rem;
     margin-top: 80px;
     margin-left: 40px;
@@ -373,6 +460,8 @@ form {
     }
 
 textarea {
+    flex:1;
+    justify-content:center;
     width: 100%;
     min-height: 80px;
     padding: 10px;

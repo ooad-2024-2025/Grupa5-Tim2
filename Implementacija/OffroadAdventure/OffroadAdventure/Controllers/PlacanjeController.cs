@@ -21,38 +21,12 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: Placanje
-        public async Task<IActionResult> Index()
-        {
-            var applicationDbContext = _context.Placanje.Include(p => p.zahtjevZaRentanje);
-            return View(await applicationDbContext.ToListAsync());
-        }
-
+       
         // GET: Placanje/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var placanje = await _context.Placanje
-                .Include(p => p.zahtjevZaRentanje)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (placanje == null)
-            {
-                return NotFound();
-            }
-
-            return View(placanje);
-        }
+     
 
         // GET: Placanje/Create
-        public IActionResult Create()
-        {
-            ViewData["zahtjevZaRentanjeId"] = new SelectList(_context.ZahtjevZaRentanje, "id", "id");
-            return View();
-        }
-
+       
         // POST: Placanje/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -71,22 +45,7 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: Placanje/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var placanje = await _context.Placanje.FindAsync(id);
-            if (placanje == null)
-            {
-                return NotFound();
-            }
-            ViewData["zahtjevZaRentanjeId"] = new SelectList(_context.ZahtjevZaRentanje, "id", "id", placanje.zahtjevZaRentanjeId);
-            return View(placanje);
-        }
-
+       
         // POST: Placanje/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -124,23 +83,6 @@ namespace OffroadAdventure.Controllers
         }
 
         // GET: Placanje/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var placanje = await _context.Placanje
-                .Include(p => p.zahtjevZaRentanje)
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (placanje == null)
-            {
-                return NotFound();
-            }
-
-            return View(placanje);
-        }
 
         // POST: Placanje/Delete/5
         [HttpPost, ActionName("Delete")]
@@ -198,7 +140,7 @@ namespace OffroadAdventure.Controllers
             await _context.SaveChangesAsync();
 
             TempData["poruka"] = $"Zahtjev je uspješno kreiran i uplata je izvršena! Očekujte obavještenje uskoro";
-            return RedirectToAction("Rezervacija", "Vozilo", new { id = zahtjevId });
+            return RedirectToAction("dajDostupnaVozila", "Vozilo", new { id = zahtjevId });
         }
 
 
