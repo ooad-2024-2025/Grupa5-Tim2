@@ -47,14 +47,14 @@
         <p class="text-muted">Dok čekate da vam se pojavi URL možete popuniti ostale podatke</p>
         <p class="text-muted">Na kraju prekopirajte URL u odgovarajuće polje</p>
         <form method="post" enctype="multipart/form-data" action="/Upload/Imgur" target="imgurIframe">
-            <div class="form-group">
-                <label for="image">Odaberi sliku:</label>
-                <input type="file" name="image" class="form-control" required />
-            </div>
+            <label for="customFileInput" class="btn btn-secondary">Odaberi sliku</label>
+            <span id="fileName">Nijedna datoteka nije odabrana</span>
+            <input type="file" id="customFileInput" name="image" style="display: none;" onchange="updateFileName(this)">
             <div class="form-group mt-2">
                 <button type="submit" class="btn btn-info">Dobavi URL</button>
             </div>
         </form>
+  
 
         <iframe name="imgurIframe" style="display:none;" onload="handleImgurResponse(this)"></iframe>
 
@@ -89,7 +89,12 @@
                 console.error("Parsing greška:", e);
             }
         }
-    </script>
 
+        function updateFileName(input) {
+            const fileName = input.files.length > 0 ? input.files[0].name : "Nijedna datoteka nije odabrana";
+            document.getElementById("fileName").innerText = fileName;
+        }
+    </script>
 }
+
 
