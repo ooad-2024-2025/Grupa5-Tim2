@@ -324,15 +324,28 @@ namespace OffroadAdventure.Controllers
         {
             return _context.ZahtjevZaRentanje.Any(e => e.id == id);
         }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Odobri(int id)
         {
-            var zahtjev = await _context.ZahtjevZaRentanje.Include(z => z.User).FirstOrDefaultAsync(z => z.id == id);
+            var zahtjev = await _context.ZahtjevZaRentanje
+                .Include(z => z.User)
+                .Include(z => z.Stavke)
+                    .ThenInclude(s => s.Vozilo)
+                .FirstOrDefaultAsync(z => z.id == id);
+
             if (zahtjev == null) return NotFound();
 
             zahtjev.statusZahtjeva = StatusZahtjeva.ODOBREN;
             _context.Update(zahtjev);
+
+            foreach (var stavka in zahtjev.Stavke)
+            {
+                var vozilo = stavka.Vozilo;
+                if (vozilo != null)
+                {
+                    vozilo.dostupno = false;
+                    _context.Update(vozilo);
+                }
+            }
 
             if (zahtjev.korisnik_id != null)
             {
@@ -345,10 +358,10 @@ namespace OffroadAdventure.Controllers
                 });
             }
 
-
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -387,6 +400,30 @@ namespace OffroadAdventure.Controllers
             return (popustProcenat, cijenaSa);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> OslobodiVozila(int id)
+        {
+            var zahtjev = await _context.ZahtjevZaRentanje
+                .Include(z => z.Stavke)
+                .ThenInclude(s => s.Vozilo)
+                .FirstOrDefaultAsync(z => z.id == id);
+
+            if (zahtjev == null)
+                return NotFound();
+
+            foreach (var stavka in zahtjev.Stavke)
+            {
+                if (stavka.Vozilo != null)
+                {
+                    stavka.Vozilo.dostupno = true;
+                    _context.Update(stavka.Vozilo);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
 
 
     }
